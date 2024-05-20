@@ -1,0 +1,21 @@
+.footer  {
+  background: var(--bs-dark-blue);
+  color: #fff;
+}
+
+.footer-li {
+  font-size: 14px;
+  color: #fff;
+  list-style: none; 
+}
+
+.footer-li li{
+  text-decoration: none;
+}
+
+.footer-copyright {
+  color: grey;
+  font-size: 13px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}

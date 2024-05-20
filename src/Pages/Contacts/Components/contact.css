@@ -1,0 +1,14 @@
+.contact-bg {
+
+  background-image: url('../../../Assets/images/HomeImage/banner-content-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+
+}
+
+.contact-icon {
+  font-size: 30px;
+}

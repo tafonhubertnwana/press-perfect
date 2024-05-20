@@ -29,7 +29,6 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-dark-blue: #183355;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
@@ -48,7 +47,9 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: Dosis, sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4507,10 +4508,11 @@ fieldset:disabled .btn {
 
 .navbar-nav {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none
+  list-style: none;
 }
 
 .navbar-nav .nav-link {
@@ -11726,25 +11728,4 @@ fieldset:disabled .btn {
   font-weight: bolder;
 }
 
-.footer  {
-  background: var(--bs-dark-blue);
-  color: #fff;
-}
-
-.footer-li {
-  font-size: 14px;
-  color: #fff;
-  list-style: none; 
-}
-
-.footer-li li{
-  text-decoration: none;
-}
-
-.footer-copyright {
-  color: grey;
-  font-size: 13px;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
 
