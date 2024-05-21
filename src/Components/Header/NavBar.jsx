@@ -17,12 +17,7 @@ const NavBar = () => {
                 </Link>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><Link class="dropdown-item" to="team">Team</Link></li>
-                  <li class="nav-item dropdown"><Link class="dropdown-item " to="single">Single Service</Link>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><Link class="dropdown-item" to="team">Gallery</Link></li>
-                      <li ><Link class="dropdown-item " to="single">Contacts</Link></li>
-                    </ul>
-                  </li>
+                  <li ><Link class="dropdown-item " to="single">Single Service</Link></li>
                   <li><Link class="dropdown-item" to="blog">Blog</Link></li>
                 </ul>
               </li>

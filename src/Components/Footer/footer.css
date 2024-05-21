@@ -5,12 +5,14 @@
 
 .footer-li {
   font-size: 14px;
-  color: #fff;
+  
   list-style: none; 
+  padding: 0;
 }
 
 .footer-li li{
   text-decoration: none;
+  color: #fff;
 }
 
 .footer-copyright {
