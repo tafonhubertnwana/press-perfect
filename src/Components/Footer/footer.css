@@ -11,8 +11,10 @@
 }
 
 .footer-li li{
-  text-decoration: none;
+  text-decoration: none !important;
+  list-style-type: none;
   color: #fff;
+  
 }
 
 .footer-copyright {
@@ -20,4 +22,8 @@
   font-size: 13px;
   padding-top: 2rem;
   padding-bottom: 1rem;
+}
+
+.footer-detail{
+  color: rgb(129, 128, 128);
 }

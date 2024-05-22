@@ -234,10 +234,10 @@ sup {
   top: -.5em
 }
 
-a {
+/* a {
   color: #B39C81;
   text-decoration: underline
-}
+} */
 
 a:hover {
   color: #B39C81

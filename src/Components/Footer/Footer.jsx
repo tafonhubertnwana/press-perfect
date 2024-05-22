@@ -15,11 +15,11 @@ const Footer = () => {
                 <img src={logo} alt="" className=""/>
                 <div className="ps-2 d-flex flex-column lh-1">
                   <span className='fs-5 fw-bolder'>PRESS PREFECT</span>
-                  <span className="">Your Laundry Center</span>
+                  <span className="footer-detail">Your Laundry Center</span>
                 </div>
               </div>
               <div>
-                <p>We offer a complete range od textile care services, backed by <br></br>the latest technical knowledge and resources</p>
+                <p className="footer-detail">We offer a complete range od textile care services, backed by <br></br>the latest technical knowledge and resources</p>
               </div>
               <div>
                 <p>
@@ -34,54 +34,54 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <p>Information</p>
-              <div>
+              <h5 >Information</h5>
+              <div className="pt-2">
                 <ul className="footer-li ">
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
-                    <Link to="#">Contact Us</Link>
+                    <span className="fa pe-2"><SlArrowRight /></span>
+                    <Link to="contact">Contact Us</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
-                    <Link to="#">About Us</Link>
+                    <span className="fa pe-2"><SlArrowRight /></span>
+                    <Link to="aboutus">About Us</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">News & Articles</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Privacy Policy</Link>
                   </li>
                   <li>
-                  < span className="fa"><SlArrowRight /></span>
+                  < span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Terms of Use</Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
-              <p>Services</p>
-              <div  >
+              <h5>Services</h5>
+              <div className="pt-2">
                 <ul className="footer-li ">
                   <li >
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Drop off Laundry</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Free Pick-Up and Delivery</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Eco-Friendly Products</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Fast & High Quality</Link>
                   </li>
                   <li>
-                    <span className="fa"><SlArrowRight /></span>
+                    <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Self Service and Press Perfect</Link>
                   </li>
                 </ul>
