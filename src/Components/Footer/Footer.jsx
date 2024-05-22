@@ -36,24 +36,24 @@ const Footer = () => {
             <div>
               <h5 >Information</h5>
               <div className="pt-2">
-                <ul className="footer-li ">
-                  <li>
+                <ul className="footer-ul ">
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="contact">Contact Us</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="aboutus">About Us</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">News & Articles</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="privacy">Privacy Policy</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                   < span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Terms of Use</Link>
                   </li>
@@ -63,24 +63,24 @@ const Footer = () => {
             <div>
               <h5>Services</h5>
               <div className="pt-2">
-                <ul className="footer-li ">
-                  <li >
-                    <span className="fa pe-2"><SlArrowRight /></span>
+                <ul className="footer-ul">
+                  <li className="footer-li" >
+                    <span className="fa   pe-2"><SlArrowRight /></span>
                     <Link to="#">Drop off Laundry</Link>
                   </li>
-                  <li>
+                  <li className="footer-li"  >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Free Pick-Up and Delivery</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Eco-Friendly Products</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Fast & High Quality</Link>
                   </li>
-                  <li>
+                  <li className="footer-li" >
                     <span className="fa pe-2"><SlArrowRight /></span>
                     <Link to="#">Self Service and Press Perfect</Link>
                   </li>

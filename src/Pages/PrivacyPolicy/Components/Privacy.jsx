@@ -30,10 +30,8 @@ const Privacy = () => {
       },
     ]
 
-
   return (
-    <div>
-      
+    <div>   
       <div>
         <div>
           <div className='contact-bg'>
@@ -55,7 +53,7 @@ const Privacy = () => {
                 ))}
               </div>
                 <div>
-                  <p>privacy@demolink.org</p>
+                  <p className='privacy-body'>privacy@demolink.org</p>
                 </div>
             </div>
           </div>

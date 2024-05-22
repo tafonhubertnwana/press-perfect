@@ -3,17 +3,16 @@
   color: #fff;
 }
 
-.footer-li {
+.footer-ul {
   font-size: 14px;
-  
   list-style: none; 
   padding: 0;
 }
 
-.footer-li li{
+.footer-li{
   text-decoration: none !important;
   list-style-type: none;
-  color: #fff;
+  color: #fff !important;
   
 }
 
