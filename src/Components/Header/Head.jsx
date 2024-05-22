@@ -45,7 +45,7 @@ const Head = () => {
                 <span>Opening Hours</span>
                 <span>8:00 - 18:00 Mon-Sat</span>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
         <div>

@@ -51,7 +51,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">Privacy Policy</Link>
+                    <Link to="privacy">Privacy Policy</Link>
                   </li>
                   <li>
                   < span className="fa pe-2"><SlArrowRight /></span>
