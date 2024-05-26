@@ -31,32 +31,25 @@ const Privacy = () => {
     ]
 
   return (
-    <div>   
-      <div>
+    <div>
+      <div className="contact-bg">
+        <div className="container">
+          <div className="text-white">
+            <h1>PRIVACY POLICY</h1>
+          </div>
+        </div>
+      </div>
+      <div className="container my-5">
+        <div className="privacy-article">
+          {privacyPolicy.map((privacy) => (
+            <div className="py-2" key={privacy.id}>
+              <h4 className="privacy-head">{privacy.privacyHead}</h4>
+              <p className="privacy-body">{privacy.privacyDetail}</p>
+            </div>
+          ))}
+        </div>
         <div>
-          <div className='contact-bg'>
-            <div className='container '>
-              <div className='text-white'>
-                <h1>PRIVACY POLICY</h1>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='container'>
-              <div className='privacy-article'>
-                {
-                  privacyPolicy.map((privacy) => (
-                <div className='py-2' key={privacy.id}>
-                  <h4 className='privacy-head'>{privacy.privacyHead}</h4>
-                  <p className='privacy-body'>{privacy.privacyDetail}</p>
-                </div>
-                ))}
-              </div>
-                <div>
-                  <p className='privacy-body'>privacy@demolink.org</p>
-                </div>
-            </div>
-          </div>
+          <p className="privacy-body">privacy@demolink.org</p>
         </div>
       </div>
     </div>

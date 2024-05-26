@@ -5,22 +5,36 @@ import { SlArrowRight } from "react-icons/sl";
 import './footer.css'
 
 const Footer = () => {
+  const informationLinks = [
+    { label: 'Contact Us', path: 'contact' },
+    { label: 'About Us', path: 'aboutus' },
+    { label: 'News & Articles', path: '#' },
+    { label: 'Privacy Policy', path: 'privacy' },
+    { label: 'Terms of Use', path: '#' },
+  ];
+
+  const serviceLinks = [
+    { label: 'Drop off Laundry', path: '#' },
+    { label: 'Free Pick-Up and Delivery', path: '#' },
+    { label: 'Eco-Friendly Products', path: '#' },
+    { label: 'Fast & High Quality', path: '#' },
+    { label: 'Self Service and Press Perfect', path: '#' },
+  ];
+
   return (
     <>
       <div className="footer">
-        <div className= "container">
-          <div className=" d-flex justify-content-between py-5 mt-5">
-            <div>
-              <div className="d-flex mb-3">
+        <div className="container">
+          <div className="row py-5 mt-5">
+            <div className="col-12 col-md-4 mb-4 mb-md-0">
+              <div className="d-flex align-items-center mb-3">
                 <img src={logo} alt="" className=""/>
                 <div className="ps-2 d-flex flex-column lh-1">
                   <span className='fs-5 fw-bolder'>PRESS PREFECT</span>
                   <span className="footer-detail">Your Laundry Center</span>
                 </div>
               </div>
-              <div>
-                <p className="footer-detail">We offer a complete range od textile care services, backed by <br></br>the latest technical knowledge and resources</p>
-              </div>
+              <p className="footer-detail">We offer a complete range od textile care services, backed by the latest technical knowledge and resources</p>
               <div>
                 <p>
                   Receive news right on your email
@@ -33,76 +47,40 @@ const Footer = () => {
                 </form>
               </div>
             </div>
-            <div>
-              <h5 >Information</h5>
+            <div className="col-12 col-md-4 mb-4 mb-md-0">
+              <h5>Information</h5>
               <div className="pt-2">
-                <ul className="footer-ul ">
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="contact">Contact Us</Link>
-                  </li>
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="aboutus">About Us</Link>
-                  </li>
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">News & Articles</Link>
-                  </li>
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="privacy">Privacy Policy</Link>
-                  </li>
-                  <li className="footer-li" >
-                  < span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">Terms of Use</Link>
-                  </li>
+                <ul className="footer-ul">
+                  {informationLinks.map((link, index) => (
+                    <li key={index} className="footer-li">
+                      <span className="fa pe-2"><SlArrowRight /></span>
+                      <Link to={link.path}>{link.label}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <div>
+            <div className="col-12 col-md-4">
               <h5>Services</h5>
               <div className="pt-2">
                 <ul className="footer-ul">
-                  <li className="footer-li" >
-                    <span className="fa   pe-2"><SlArrowRight /></span>
-                    <Link to="#">Drop off Laundry</Link>
-                  </li>
-                  <li className="footer-li"  >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">Free Pick-Up and Delivery</Link>
-                  </li>
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">Eco-Friendly Products</Link>
-                  </li>
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">Fast & High Quality</Link>
-                  </li>
-                  <li className="footer-li" >
-                    <span className="fa pe-2"><SlArrowRight /></span>
-                    <Link to="#">Self Service and Press Perfect</Link>
-                  </li>
+                  {serviceLinks.map((link, index) => (
+                    <li key={index} className="footer-li">
+                      <span className="fa pe-2"><SlArrowRight /></span>
+                      <Link to={link.path}>{link.label}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-
-
           </div>
 
-          
-        
-
           <div className="footer-copyright">
-            <p >Copyright &copy; 2024, All Rights Reserved.</p>
-          <div/>
+            <p>Copyright &copy; 2024, All Rights Reserved.</p>
+          </div>
         </div>
       </div>
-      </div>
-      </>  
-      
-   
+    </>
   )
 }
 
