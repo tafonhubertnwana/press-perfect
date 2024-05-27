@@ -5,6 +5,7 @@ import Testimonial from "../../Pages/Testimonials/Components/Testimonial"
 import Privacy from "../../Pages/PrivacyPolicy/Components/Privacy"
 import AboutUs from "../../Pages/AboutUs/Components/AboutUs"
 import Home from "../../Pages/Home/Components/Home"
+import More from "../../Pages/More/Components/More"
 
 const Routers = () => {
   return (
@@ -16,6 +17,7 @@ const Routers = () => {
           <Route path='/privacy' element={<Privacy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/more" element={<More />} />
         </Route>
       </Routes>
     </div>

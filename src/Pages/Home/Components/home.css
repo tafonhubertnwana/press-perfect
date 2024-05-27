@@ -1,0 +1,12 @@
+.home-body{
+  background-color: #f7f7f7 ;
+}
+
+@media (max-width: 767.98px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .w-75 {
+    width: 100% !important;
+  }
+}
