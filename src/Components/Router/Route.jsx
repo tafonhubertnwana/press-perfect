@@ -6,6 +6,8 @@ import Privacy from "../../Pages/PrivacyPolicy/Components/Privacy"
 import AboutUs from "../../Pages/AboutUs/Components/AboutUs"
 import Home from "../../Pages/Home/Components/Home"
 import More from "../../Pages/More/Components/More"
+import Team from "../../Pages/Team/Component/Team"
+import Faq from "../../Pages/FAQ/Components/Faq"
 
 const Routers = () => {
   return (
@@ -18,6 +20,8 @@ const Routers = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/more" element={<More />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/faq" element={<Faq />} />
         </Route>
       </Routes>
     </div>

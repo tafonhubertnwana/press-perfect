@@ -14,6 +14,7 @@ import homeIcon5 from '../../../Assets/images/HomeImage/home-icons05.png';
 import homeIcon6 from '../../../Assets/images/HomeImage/home-icons06.png';
 import homeIcon8 from '../../../Assets/images/HomeImage/home-icons08.png';
 import homeIcon9 from '../../../Assets/images/HomeImage/home-icons09.png';
+import imgTest from '../../../Assets/images/HomeImage/testimonials-img03.jpg';
 
 
 
@@ -80,6 +81,24 @@ const Home = () => {
         "Regular updates of your order. to help you keep a track f your laundry and plan accordingly."
     }
 
+  ]
+
+  const testimonials = [
+    {
+      name: 'Olivia Jones',
+      title: 'Client',
+      text: "I have yet to come across a company as professional, hardworking & service oriented as Press Perfect. It has been a pleasure working with a company that works hard to keep their flawless standard."
+    },
+    {
+      name: 'Olivia Jones',
+      title: 'Client',
+      text: "Hey guys! Thanks for coordinating all of the shipments and deliveries. Everything arrived on schedule and is in good shape. you guys do a fantastic job staying on top of everything for us. Thank you!"
+    },
+    {
+      name: 'Olivia Jones',
+      title: 'Client',
+      text: "I absolutely love Press Perfect. The lockers are 24/7, making dropping off and picking up dry cleaning quick and easy. The quality of the dry cleaning is great. Overall, a great service that I'd highly recommend to anyone!"
+    },
   ]
 
 
@@ -161,6 +180,8 @@ const Home = () => {
       </div>
       </section>
 
+
+      {/* our procedures */}
       <section>
         <div className="container">
           <div className='my-5 text-center'>
@@ -187,35 +208,84 @@ const Home = () => {
             </div>
         </div>
       </section>
-
+      
+      {/* our features */}
       <section>
-  <div>
-    <div className="home-body my-5">
-      <div className="container my-5">
-        <div className="py-5 lh-1">
-          <p>Our features</p>
-          <h3>WHY CHOOSE US</h3>
+        <div>
+          <div className="home-body my-5">
+            <div className="container my-5">
+              <div className="py-5 lh-1">
+                <p>Our features</p>
+                <h3>WHY CHOOSE US</h3>
+              </div>
+              <div className="row g-4">
+              {Features.map((feature, index) => (
+                  <div className="col-md-6 col-lg-4" key={index}>
+                    <div className="d-flex justify-content-between p-4">
+                      <div className='pe-4'>
+                        <img src={feature.icon} alt="" />
+                      </div>
+                      <div>
+                        <p>{feature.title}</p>
+                        <p>{feature.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="row g-4">
-        {Features.map((feature, index) => (
-            <div className="col-md-6 col-lg-4" key={index}>
-              <div className="d-flex justify-content-between p-4">
-                <div className='pe-4'>
-                  <img src={feature.icon} alt="" />
+      </section>
+
+      {/* testimonial */}
+      <section>
+        <div className='container'>
+          <div className='my-5 text-center'>
+            <p>Testimonials</p>
+            <h3>WHAT OUR CLIENTS SAY</h3>
+          </div>
+          <div className='row mt-5 g-4'>
+            {testimonials.map((testimonial, index) => (
+              <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
+                <div className='testimonial-body p-4'>
+                  <div className='d-flex pb-2'>
+                    <img src={imgTest} alt="" className='img-testimonial me-3' />
+                    <div className='lh-1'>
+                      <h4>{testimonial.name}</h4>
+                      <span>{testimonial.title}</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p>{testimonial.text}</p>
+                  </div>
                 </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* price table */}
+      <section>
+        <div >
+          <div className='home-body'>
+            <div className='container'>
+              <div className='my-5 text-center'>
+                <p>Our Pricing Table</p>
+                <h3>AFFORDABLE PRICES</h3>
+              </div>
+              <div>
                 <div>
-                  <p>{feature.title}</p>
-                  <p>{feature.description}</p>
+                  
                 </div>
               </div>
             </div>
-          ))}
-          
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </>
   )
 }
