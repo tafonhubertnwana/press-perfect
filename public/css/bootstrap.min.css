@@ -11754,3 +11754,28 @@ fieldset:disabled .btn {
   max-height: 1000px; /* Adjust this value as needed */
   transition: max-height 0.5s ease-in;
 }
+
+.img{
+  background-color: #fafafa;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, .15);
+}
+
+.img-border{
+  border-radius: 50% !important;
+}
+
+.img-span{
+  background-color: #0dcaf0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  margin: -30px auto 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+
+}

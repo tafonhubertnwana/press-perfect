@@ -15,8 +15,9 @@ import homeIcon6 from '../../../Assets/images/HomeImage/home-icons06.png';
 import homeIcon8 from '../../../Assets/images/HomeImage/home-icons08.png';
 import homeIcon9 from '../../../Assets/images/HomeImage/home-icons09.png';
 import imgTest from '../../../Assets/images/HomeImage/testimonials-img03.jpg';
-import cardImg from '../../../Assets/images/HomeImage/home-img02.jpg';
 
+import laundryMachine from '../../../Assets/images/HomeImage/laundry_washing_machine.png'
+import PriceTable from './PriceTable';
 
 const Home = () => {
 
@@ -24,21 +25,25 @@ const Home = () => {
     {
       title: "You Order",
       image: hw1,
+      number: 1,
       description: "Bag up all your dirty clothes",
     },
     {
       title: "We Collect",
       image: hw2,
+      number: 2,
       description: "Collection from your doorStep",
     },
     {
       title: "We Clean",
       image: laundryWash,
+      number: 3,
       description: "Wash, dry and fold your items",
     },
     {
       title: "We Return",
       image: deliveryGuy,
+      number: 4,
       description: "Order will be delivered in 24hrs",
     },
   ]
@@ -100,7 +105,7 @@ const Home = () => {
       text: "I absolutely love Press Perfect. The lockers are 24/7, making dropping off and picking up dry cleaning quick and easy. The quality of the dry cleaning is great. Overall, a great service that I'd highly recommend to anyone!"
     },
   ]
-}
+
 
 
 
@@ -197,10 +202,11 @@ const Home = () => {
                 <div>
                   <p>{step.title}</p>
                 </div>
-                <div>
-                  <img src={step.image} alt="" className='rounded-50 border p-3' />
+                <div className='rounded-50 img img-border mx-auto d-flex align-items-center justify-content-center '>
+                  <img src={step.image} alt=""  />
                 </div>
-                <div>
+                <span className='img-span text-bold'>{step.number}</span>
+                <div className='mt-4'>
                   <p>{step.description}</p>
                 </div>
               </div>
@@ -269,39 +275,32 @@ const Home = () => {
       </section>
 
       {/* price table */}
+      <div>
+        <PriceTable />
+      </div>
+
+      {/* special order */}
       <section>
-        <div >
-          <div className='home-body'>
-            <div className='container'>
-              <div className='my-5 text-center'>
-                <p>Our Pricing Table</p>
-                <h3>AFFORDABLE PRICES</h3>
-              </div>
-              <div>
-                <div>
-                  
-                </div>
-              </div>
+        <div>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 col-sm-12 d-flex justify-content-center mt-5">
+              <img src={laundryMachine} alt="washing Machine" className="img-fluid" />
+            </div>
+            <div className="col-md-6 col-sm-12 pt-5 text-center">
+              <h3>Special Order</h3>
+              <p>
+                We are offering a special order for our customers.
+                <br />
+                <Link to="order" className="btn btn-primary">Order Now</Link>
+              </p>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* blog section */}
-      <section>
-        <div className='container'>
-          <div>
-            <div class="card" style="width: 18rem;">
-              <img src={cardImg} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div> 
         </div>
       </section>
+
+
     </>
   )
 }
