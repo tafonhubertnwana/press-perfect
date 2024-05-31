@@ -48,7 +48,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-monospace);
+  font-family: 'Dosis', san-sarif!important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -11730,4 +11730,27 @@ fieldset:disabled .btn {
   border-radius: 50%;
 }
 
+.fa-question{
+  color: #28c1cb !important;
+  font-size: 20px;
+  font-weight: 900;
+ 
+}
 
+.question {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.answer.open {
+  max-height: 1000px; /* Adjust this value as needed */
+  transition: max-height 0.5s ease-in;
+}

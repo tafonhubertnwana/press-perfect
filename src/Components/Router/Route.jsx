@@ -8,6 +8,7 @@ import Home from "../../Pages/Home/Components/Home"
 import More from "../../Pages/More/Components/More"
 import Team from "../../Pages/Team/Component/Team"
 import Faq from "../../Pages/FAQ/Components/Faq"
+import Blog from "../../Pages/Blog/Components/Blog"
 
 const Routers = () => {
   return (
@@ -22,6 +23,7 @@ const Routers = () => {
           <Route path="/more" element={<More />} />
           <Route path="/team" element={<Team />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/blog" element={<Blog />} />
         </Route>
       </Routes>
     </div>

@@ -15,7 +15,7 @@ import homeIcon6 from '../../../Assets/images/HomeImage/home-icons06.png';
 import homeIcon8 from '../../../Assets/images/HomeImage/home-icons08.png';
 import homeIcon9 from '../../../Assets/images/HomeImage/home-icons09.png';
 import imgTest from '../../../Assets/images/HomeImage/testimonials-img03.jpg';
-
+import cardImg from '../../../Assets/images/HomeImage/home-img02.jpg';
 
 
 const Home = () => {
@@ -100,7 +100,7 @@ const Home = () => {
       text: "I absolutely love Press Perfect. The lockers are 24/7, making dropping off and picking up dry cleaning quick and easy. The quality of the dry cleaning is great. Overall, a great service that I'd highly recommend to anyone!"
     },
   ]
-
+}
 
 
 
@@ -284,6 +284,22 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* blog section */}
+      <section>
+        <div className='container'>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img src={cardImg} class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div> 
         </div>
       </section>
     </>
