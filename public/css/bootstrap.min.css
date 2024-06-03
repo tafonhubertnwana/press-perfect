@@ -11726,6 +11726,10 @@ fieldset:disabled .btn {
   font-weight: bolder;
 }
 
+.discount{
+  color: #28c1cb !important;
+}
+
 .team {
   border-radius: 50%;
 }

@@ -8,7 +8,7 @@ const PriceTable = () => {
       <div className='container'>
               <div className=' text-center'>
                 <p className='pt-5'>Our Pricing Table</p>
-                <h3>AFFORDABLE PRICES</h3>
+                <h3 className='pb-4'>AFFORDABLE PRICES</h3>
               </div>
               <div>
                 <div className='row'>

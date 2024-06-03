@@ -1,5 +1,6 @@
 import React from 'react'
 import PriceTable from '../../Home/Components/PriceTable'
+import FullPrice from './FullPrice'
 
 const Pricing = () => {
   return (
@@ -21,6 +22,11 @@ const Pricing = () => {
         <div className="home-body">
           <PriceTable />
         </div>
+      </section>
+
+      {/* full price table */}
+      <section>
+        <FullPrice />
       </section>
     </>
   )

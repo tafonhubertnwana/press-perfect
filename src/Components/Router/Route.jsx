@@ -10,6 +10,8 @@ import Team from "../../Pages/Team/Component/Team"
 import Faq from "../../Pages/FAQ/Components/Faq"
 import Blog from "../../Pages/Blog/Components/Blog"
 import Pricing from "../../Pages/Pricing/Components/Pricing"
+import Gallery from "../../Pages/Gallery/Components/Gallery"
+import Services from "../../Pages/Services/Components/Services"
 
 const Routers = () => {
   return (
@@ -17,15 +19,17 @@ const Routers = () => {
       <Routes>
         <Route element={<PageLayout />} >
           <Route index path="/" element={<Home />} />
-          <Route path="/testimonials" element={<Testimonial />} />
-          <Route path='/privacy' element={<Privacy />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="services" element={<Services/>} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/testimonials" element={<Testimonial />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path='/privacy' element={<Privacy />} />
           <Route path="/more" element={<More />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/faq" element={<Faq />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/pricing" element={<Pricing />} />
         </Route>
       </Routes>
     </div>
