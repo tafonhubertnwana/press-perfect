@@ -9,6 +9,7 @@ import More from "../../Pages/More/Components/More"
 import Team from "../../Pages/Team/Component/Team"
 import Faq from "../../Pages/FAQ/Components/Faq"
 import Blog from "../../Pages/Blog/Components/Blog"
+import Pricing from "../../Pages/Pricing/Components/Pricing"
 
 const Routers = () => {
   return (
@@ -24,6 +25,7 @@ const Routers = () => {
           <Route path="/team" element={<Team />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Route>
       </Routes>
     </div>

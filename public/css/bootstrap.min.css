@@ -11776,6 +11776,12 @@ fieldset:disabled .btn {
   margin: -30px auto 20px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-
-
 }
+
+/* .table-hover{
+cursor: pointer;
+}
+
+.table-hover:hover{
+  border: 2px solid #28c1cb;
+} */

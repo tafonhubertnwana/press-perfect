@@ -15,6 +15,7 @@ import homeIcon6 from '../../../Assets/images/HomeImage/home-icons06.png';
 import homeIcon8 from '../../../Assets/images/HomeImage/home-icons08.png';
 import homeIcon9 from '../../../Assets/images/HomeImage/home-icons09.png';
 import imgTest from '../../../Assets/images/HomeImage/testimonials-img03.jpg';
+import cardImg from '../../../Assets/images/HomeImage/home-img02.jpg';
 
 import laundryMachine from '../../../Assets/images/HomeImage/laundry_washing_machine.png'
 import PriceTable from './PriceTable';
@@ -252,7 +253,7 @@ const Home = () => {
             <p>Testimonials</p>
             <h3>WHAT OUR CLIENTS SAY</h3>
           </div>
-          <div className='row mt-5 g-4'>
+          <div className='row my-5 g-4'>
             {testimonials.map((testimonial, index) => (
               <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
                 <div className='testimonial-body p-4'>
@@ -276,7 +277,78 @@ const Home = () => {
 
       {/* price table */}
       <div>
-        <PriceTable />
+      <section>
+        <div >
+          <div className='home-body'>
+           <div>
+             <PriceTable />
+            </div> 
+
+          {/* blog section */}
+
+            <div className="container">
+              <div className='text-center my-4'>
+                <h2>FROM THE BLOG</h2>
+              </div>
+              <div className="row">
+                <div className="col-12 col-md-4 mb-4">
+                  <div className="card" style={{ width: "18rem" }}>
+                    <img src={cardImg} className="card-img-top" alt="..." />
+                    <div className="card-body justify-content-center">
+                      <h5 className="card-title">7 Sept 2021</h5>
+                      <h5 className="card-title">When to Skip the Fabric Softener</h5>
+                      <p className="card-text">
+                        Fabric softeners are great for making clothes and linens feel soft
+                        and fluffy. But before you wash another load, read this. There are
+                        types of clothing that should NEVER touch these products.
+                      </p>
+                      <Link to="blog" className="btn btn-primary" >
+                      READ MORE
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-4 mb-4">
+                  <div className="card" style={{ width: "18rem" }}>
+                    <img src={cardImg} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">7 Sept 2021</h5>
+                      <h5 className="card-title">
+                        How to Get Rid of Smoke Odor on Clothes
+                      </h5>
+                      <p className="card-text">
+                        We all know that smell. That stale ashtray stink that follows you
+                        home and seems to engulf everything you touch. Yuck! How do you
+                        get that unmistakable smoke stench out of your clothes?.
+                      </p>
+                      <Link to="blog" className="btn btn-primary" >
+                      READ MORE
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-4 mb-4">
+                  <div className="card" style={{ width: "18rem" }}>
+                    <img src={cardImg} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                      <h5 className="card-title">7 Sept 2021</h5>
+                      <h5 className="card-title">20 Ways to Use Old, Mismatched Socks</h5>
+                      <p className="card-text">
+                        For ages, man has tried to solve the problem of mismatched socks.
+                        It seems when a perfectly good pair of socks goes into the laundry
+                        basket…only one of them makes it out of the dryer.
+                      </p>
+                      <Link to="blog" className="btn btn-primary" >
+                      READ MORE
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </div>
 
       {/* special order */}
