@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../Assets/images/HomeImage/logo.png'
+import logo from '../../Assets/images/HomeImage/MainLogo.png'
 import {Link} from 'react-router-dom';
 import { SlArrowRight } from "react-icons/sl";
 import './footer.css'
