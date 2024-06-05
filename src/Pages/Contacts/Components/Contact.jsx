@@ -50,7 +50,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='container my-5'>
-          <div className='row'>
+          <div className='row '>
             <div className='col-md-6'>
               {
                 contactItems.map((contact) => (
@@ -67,10 +67,59 @@ const Contact = () => {
                 ))
               }
             </div>
+
             <div className='col-md-6'>
-              <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.649151446558!2d9.275848674490856!3d4.173113219901949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613259651819a3%3A0x754210aa92e62bff!2sBuea!5e0!3m2!1sen!2scm!4v1716235049726!5m2!1sen!2scm" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <div className='mb-5'>
+                <form >
+                  <div className="mb-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Username" 
+                      aria-label="Username"
+                      id="exampleInputEmail1"
+                      aria-describedby="basic-addon1"
+                    />
+                    <label htmlFor="exampleInputEmail1" className="form-label">
+                      Email address
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" className="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="exampleInputPassword1" className="form-label">
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                  <div className="mb-3">
+                      <label for="subject" className="form-label">Subject</label>
+                      <textarea className="form-control" id="subject" name="subject" placeholder="Write something.." style={{height:200}}></textarea>
+                      </div>
+                  <button type="submit" className="btn btn-primary justify-content-center">
+                    Submit
+                  </button>
+                </form>
               </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.649151446558!2d9.275848674490856!3d4.173113219901949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613259651819a3%3A0x754210aa92e62bff!2sBuea!5e0!3m2!1sen!2scm!4v1716235049726!5m2!1sen!2scm" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
