@@ -2253,7 +2253,6 @@ progress {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -4376,7 +4375,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: .5rem 1rem;
-  color: #B39C81;
+  color: #446284;
   text-decoration: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
@@ -4389,7 +4388,7 @@ fieldset:disabled .btn {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: #B39C81
+  color: #28c1cb 
 }
 
 .nav-link.disabled {
@@ -6093,9 +6092,9 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: flex-end;
   padding: .75rem;
-  border-top: 1px solid #dee2e6;
+  /* border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(.3rem - 1px);
-  border-bottom-left-radius: calc(.3rem - 1px)
+  border-bottom-left-radius: calc(.3rem - 1px) */
 }
 
 .modal-footer>* {
@@ -11787,5 +11786,27 @@ cursor: pointer;
 }
 
 .table-hover:hover{
-  border: 2px solid #28c1cb;
+  border: 1px solid #28c1cb;
 } */
+
+.text-head{
+  font-size: 20px;
+  font-weight: 400;
+  color: #28c1cb;
+}
+
+.test-modal{
+  color: #28c1cb;
+}
+
+
+.request-btn{
+  border: 1px solid #28c1cb ;
+  transition: 250ms;
+}
+
+.request-btn:hover{
+  background-color: #28c1cb;
+  color: #fff;
+  border: 1px solid #28c1cb ;
+}

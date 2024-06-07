@@ -41,8 +41,8 @@ const Footer = () => {
                 </p>
                 <form action="" method="post">
                   <div>
-                    <input type="text" placeholder="Enter your e-mail here *" className="form-control mb-3"/>
-                    <button type="submit" className="btn btn-primary px-5 py-3">SUBSCRIBE</button>
+                    <input type="text" placeholder="Enter your e-mail here " className="form-control mb-3 "/>
+                    <button type="submit" className="px-5 py-3 footer-subscribe">SUBSCRIBE</button>
                   </div>
                 </form>
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 <ul className="footer-ul">
                   {informationLinks.map((link, index) => (
                     <li key={index} className="footer-li">
-                      <span className="fa pe-2"><SlArrowRight /></span>
+                      <span className="fa pe-3"><SlArrowRight /></span>
                       <Link to={link.path}>{link.label}</Link>
                     </li>
                   ))}
@@ -66,7 +66,7 @@ const Footer = () => {
                 <ul className="footer-ul">
                   {serviceLinks.map((link, index) => (
                     <li key={index} className="footer-li">
-                      <span className="fa pe-2"><SlArrowRight /></span>
+                      <span className="fa pe-3"><SlArrowRight /></span>
                       <Link to={link.path}>{link.label}</Link>
                     </li>
                   ))}

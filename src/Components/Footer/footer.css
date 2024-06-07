@@ -26,3 +26,14 @@
 .footer-detail{
   color: rgb(129, 128, 128);
 }
+
+.footer-subscribe:hover{
+  color: #28c1cb;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.footer-subscribe{
+  background-color: #28c1cb;
+  color: #fff;
+}

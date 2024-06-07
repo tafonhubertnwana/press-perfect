@@ -10,3 +10,25 @@
     width: 100% !important;
   }
 }
+
+.read-more {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.read-more:hover{
+  color: #28c1cb;
+}
+
+.order-now{
+  border: none !important;
+  transition: 250ms;
+}
+
+.order-now:hover{
+  background-color: #446284;
+  color: #fff;
+}

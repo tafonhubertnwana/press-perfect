@@ -121,7 +121,60 @@ const Home = () => {
                 <p className=''>
                   The Laundry Company provides a premium laundry, ironing,dry <br/> cleaning and alteration service for domestic and small businesses <br/> in the SouthWest.
                 </p>
-                <button className='btn btn-primary'>ORDER NOW</button>
+                <div>
+
+                  <button type="button" className='px-4 py-3 border-0 bg-white mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
+                  <div>
+                    <div
+                      className="modal fade"
+                      id="exampleModal"
+                      tabIndex={-1}
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div className="modal-dialog  modal-dialog-centered">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">
+                             Request Callback
+                            </h5>
+                            <button
+                              type="button"
+                              className="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            />
+                          </div>
+                          <div className="modal-body">
+                            <form>
+                              <div className="mb-3">
+                                <label htmlFor="recipient-name" className="col-form-label">
+                                  Recipient:
+                                </label>
+                                <input type="text" className="form-control" id="recipient-name" />
+                              </div>
+                              <div className="mb-3">
+                                <label htmlFor="message-text" className="col-form-label">
+                                  Message:
+                                </label>
+                                <textarea
+                                  className="form-control"
+                                  id="message-text"
+                                  defaultValue={""}
+                                />
+                              </div>
+                            </form>
+                          </div>
+                          <div className="modal-footer justify-content-center">
+                            <button type="button" className='px-5 py-3 request-btn bg-white mt-2'>
+                              REQUEST
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
               </div>
@@ -137,7 +190,7 @@ const Home = () => {
               <div className="w-50 mx-auto">
                 <h5>Laundry Services</h5>
                 <p>Let us pick up your dirty laundry, sort it, stains, dry, fold and deliver back to you in one neat, easy package</p>
-                <button><Link to='more'>READ MORE</Link></button>
+                <button className='border-0 bg-white text-black'><Link className='read-more' to='more'>READ MORE</Link></button>
               </div>
             </div>
           </div>
@@ -147,7 +200,7 @@ const Home = () => {
               <div className="w-50 mx-auto">
                 <h5>Dry Cleaning Services</h5>
                 <p>Students and local residents love on our reliable dry cleaning services for the fast, accurate, top quality results.</p>
-                <button ><Link to='more'>READ MORE</Link></button>
+                <button className='border-0 bg-white  '><Link className='read-more' to='more'>READ MORE</Link></button>
               </div>
             </div>
           </div>
@@ -161,7 +214,7 @@ const Home = () => {
           <div className="col-md-6">
             <div className="w-75">
               <div>
-                <p>Services you will love</p>
+                <p className='text-head'>Services you will love</p>
                 <h2>WE ARE PASSIONATE ABOUT LAUNDRY</h2>
                 <p>
                   We are professionals in the laundry and dry cleaning business, which
@@ -191,7 +244,7 @@ const Home = () => {
       <section>
         <div className="container">
           <div className='my-5 text-center'>
-            <p>In 4 easy steps</p>
+            <p className='text-head'>In 4 easy steps</p>
             <h3>How PressPerfect works</h3>
           </div>
           <div className='row justify-content-center'>
@@ -222,7 +275,7 @@ const Home = () => {
           <div className="home-body my-5">
             <div className="container my-5">
               <div className="py-5 lh-1">
-                <p>Our features</p>
+                <p className='text-head'>Our features</p>
                 <h3>WHY CHOOSE US</h3>
               </div>
               <div className="row g-4">
@@ -250,7 +303,7 @@ const Home = () => {
       <section>
         <div className='container'>
           <div className='my-5 text-center'>
-            <p>Testimonials</p>
+            <p className='text-head'>Testimonials</p>
             <h3>WHAT OUR CLIENTS SAY</h3>
           </div>
           <div className='row my-5 g-4'>
@@ -364,7 +417,7 @@ const Home = () => {
               <p>
                 We are offering a special order for our customers.
                 <br />
-                <Link to="order" className="btn btn-primary">Order Now</Link>
+                <Link to="order" className="btn btn-primary mt-3">Order Now</Link>
               </p>
             </div>
           </div>
