@@ -42,7 +42,7 @@ const Footer = () => {
                 <form action="" method="post">
                   <div>
                     <input type="text" placeholder="Enter your e-mail here " className="form-control mb-3 "/>
-                    <button type="submit" className="px-5 py-3 footer-subscribe">SUBSCRIBE</button>
+                    <button type="submit" className="px-5 py-3 footer-subscribe border-0">SUBSCRIBE</button>
                   </div>
                 </form>
               </div>

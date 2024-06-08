@@ -11810,3 +11810,9 @@ cursor: pointer;
   color: #fff;
   border: 1px solid #28c1cb ;
 }
+
+.full-size{
+  font-size: 50px;
+  color: #446284;
+  font-weight: 300;
+}
