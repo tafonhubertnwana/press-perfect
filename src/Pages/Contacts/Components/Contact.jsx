@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { Link } from 'react-router-dom'
 import { FaPhone } from "react-icons/fa6";
 import { FaRegClock } from "react-icons/fa6";
@@ -7,6 +7,11 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import './contact.css'
 
 const Contact = () => {
+
+  const [name , setName] = useState("")
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState("")
+  const [password, setPassword] = useState("")
 
   const contactItems = [
     {
@@ -70,7 +75,7 @@ const Contact = () => {
 
             <div className='col-md-6'>
               <div className='mb-5'>
-                <form >
+                <form action="https://getform.io/f/7ec526fc-2ea4-40a1-bb70-ad4e4ed25074" method="POST">
                   <div className="mb-3">
                   <label htmlFor="exampleInputEmail1" className="form-label">
                       Your Name
@@ -82,6 +87,10 @@ const Contact = () => {
                       aria-label="Username"
                       id="exampleInputEmail1"
                       aria-describedby="basic-addon1"
+                      name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+
                     />
                     <label htmlFor="exampleInputEmail1" className="form-label">
                       Email address
@@ -91,6 +100,11 @@ const Contact = () => {
                       className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)} 
+
                     />
                     <div id="emailHelp" className="form-text">
                       We'll never share your email with anyone else.
@@ -104,11 +118,23 @@ const Contact = () => {
                       type="password"
                       className="form-control"
                       id="exampleInputPassword1"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
                   <div className="mb-3">
                       <label for="subject" className="form-label">Subject</label>
-                      <textarea className="form-control" id="subject" name="subject" placeholder="Write something.." style={{height:200}}></textarea>
+                      <textarea 
+                      className="form-control" 
+                      id="subject" 
+                      name="subject" 
+                      placeholder="Write something.." 
+                      style={{height:200}}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+
+                      >
+                      </textarea>
                       </div>
                   <button type="submit" className="btn btn-primary justify-content-center">
                     Submit
