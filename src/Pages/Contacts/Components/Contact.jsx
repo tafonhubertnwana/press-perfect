@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <>
       <div>
-        <div className='contact-bg'>
+        <div className='contact-bg' style={{paddingTop: 150, paddingBottom: 150}}>
           <div className='container '>
             <div className=''>
               <h1>CONTACTS</h1>

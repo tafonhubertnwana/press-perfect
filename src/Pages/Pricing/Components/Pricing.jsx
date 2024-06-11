@@ -5,7 +5,7 @@ import FullPrice from './FullPrice'
 const Pricing = () => {
   return (
     <>
-      <div className='contact-bg'>
+      <div className='contact-bg' style={{paddingTop: 150, paddingBottom: 150}}>
         <div className='container'>
           <div className='text-black'>
             <h1>PRICING</h1>

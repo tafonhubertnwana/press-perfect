@@ -187,7 +187,7 @@ const Home = () => {
           <div className=''>
             <div className='container'>
             <div className='my-5 text-center'>
-                <h3 className=''>SERVICES</h3>
+                <h3 className='fw-bold'>SERVICES</h3>
               </div>
             <HomeService />
             </div>

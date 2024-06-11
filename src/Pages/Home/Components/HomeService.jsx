@@ -12,7 +12,7 @@ const HomeService = () => {
     <div className="w-100 text-center p-4">
       <img src={homeIcon2} alt="" className="w-100 h-100 img-radius" />
       <div className="w-75 mx-auto pt-3">
-        <h5>Dry Cleaning</h5>
+        <h5 className='fw-bold'>Dry Cleaning</h5>
         <p>
           We offer specialist dry cleaning services for your special garments at
           very affordable prices.
@@ -29,7 +29,7 @@ const HomeService = () => {
     <div className="w-100 text-center p-4 ">
       <img src={homeIcon3} alt="" className="w-100 h-100 img-radius" />
       <div className="w-75 mx-auto pt-3">
-        <h5>Wash & Iron</h5>
+        <h5 className='fw-bold'>Wash & Iron</h5>
         <p>
           We will wash your cloths and deliver them to your doorstep, surely you
           will like our services
@@ -46,7 +46,7 @@ const HomeService = () => {
     <div className="w-100 text-center p-4">
       <img src={homeIcon3} alt="" className="w-100 h-100 img-radius" />
       <div className="w-75 mx-auto pt-3">
-        <h5>Steam Iron</h5>
+        <h5 className='fw-bold'>Steam Iron</h5>
         <p>
           Look crisp with steam ironed clothes, make lasting impression on
           others, Use our services today.
@@ -63,7 +63,7 @@ const HomeService = () => {
     <div className="w-100 p-4 text-center">
       <img src={homeIcon1} alt="" className="w-100 h-100 img-radius"  />
       <div className="w-75 mx-auto pt-3">
-        <h5>Besdheets Cleaning</h5>
+        <h5 className='fw-bold'>Besdheets Cleaning</h5>
         <p>
           For you bedsheets we do multiple wah cycles with high quality
           datergent, conditioner and softener.

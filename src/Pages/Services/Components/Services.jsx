@@ -5,7 +5,7 @@ const Services = () => {
     <div>
       <div className='contact-bg'>
           <div className='container'>
-            <div className='text-white'>
+            <div className=''>
               <h1>SERVICES</h1>
               <p>&nbsp;</p>
               <p>

@@ -6,9 +6,9 @@ const Faq = () => {
     <>
       <div>
         <div>
-            <div className='contact-bg'>
+            <div className='contact-bg' style={{paddingTop: 150, paddingBottom: 150}}>
               <div className='container '>
-                <div className='text-white'>
+                <div className=''>
                   <h1>FAQ</h1>
                   <p>&nbsp;</p>
                   <p className=''>

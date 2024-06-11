@@ -15,15 +15,18 @@
 }
 
 .read-more {
-  color: #000000;
+  color: #fff;
   font-size: 18px;
-  font-weight: 600;
+
   text-decoration: none;
   margin-top: 10px;
+  background:  #28c1cb;
+  padding: 0.5rem;
 }
 
 .read-more:hover{
   color: #28c1cb;
+  background: #446284;
 }
 
 .order-now{
