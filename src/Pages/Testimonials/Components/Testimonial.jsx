@@ -56,7 +56,7 @@ const Testimonial = () => {
       <div>
         <div className='contact-bg'>
           <div className='container'>
-            <div className='text-white'>
+            <div className=''>
               <h1>TESTIMONIALS</h1>
               <p>&nbsp;</p>
               <p>
@@ -68,24 +68,27 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className='container'>
-          <div className='row mt-5 g-4'>
-            {testimonials.map((testimonial, index) => (
-              <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
-                <div className='testimonial-body p-4'>
-                  <div className='d-flex pb-2'>
-                    <img src={imgTest} alt="" className='img-testimonial me-3' />
-                    <div className='lh-1'>
-                      <h4>{testimonial.name}</h4>
-                      <span>{testimonial.title}</span>
+        <div className='testimonial-bg'>
+
+          <div className='container'>
+            <div className='row py-5 g-4'>
+              {testimonials.map((testimonial, index) => (
+                <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
+                  <div className='testimonial-body p-4'>
+                    <div className='d-flex pb-2'>
+                      <img src={imgTest} alt="" className='img-testimonial me-3' />
+                      <div className='lh-1'>
+                        <h4>{testimonial.name}</h4>
+                        <span>{testimonial.title}</span>
+                      </div>
+                    </div>
+                    <div>
+                      <p>{testimonial.text}</p>
                     </div>
                   </div>
-                  <div>
-                    <p>{testimonial.text}</p>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

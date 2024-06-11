@@ -11816,3 +11816,20 @@ cursor: pointer;
   color: #446284;
   font-weight: 300;
 }
+
+/* .service-bg{
+  background-image: url('../../../Assets/images/HomeImage/bg-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+
+  .service-bg{
+    background-image: url('../../../Assets/images/HomeImage/service-bg-mobile.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+} */

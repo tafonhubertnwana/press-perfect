@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div>
       <div className='contact-bg'>
           <div className='container '>
-            <div className='text-white'>
+            <div className=''>
               <h1>ABOUT US</h1>
               <p>&nbsp;</p>
               <p>

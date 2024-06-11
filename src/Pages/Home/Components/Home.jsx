@@ -1,8 +1,7 @@
 import React from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
-import homeIcon1 from '../../../Assets/images/HomeImage/home-icons01.png';
-import homeIcon2 from '../../../Assets/images/HomeImage/home-icons02.png'
+
 import bannerContent from '../../../Assets/images/HomeImage/home_laundry_services.png';
 import hw1 from '../../../Assets/images/HomeImage/hw-1.png';
 import hw2 from '../../../Assets/images/HomeImage/hw-2.png';
@@ -19,6 +18,7 @@ import cardImg from '../../../Assets/images/HomeImage/home-img02.jpg';
 
 import laundryMachine from '../../../Assets/images/HomeImage/laundry_washing_machine.png'
 import PriceTable from './PriceTable';
+import HomeService from './HomeService';
 
 const Home = () => {
 
@@ -26,25 +26,25 @@ const Home = () => {
     {
       title: "You Order",
       image: hw1,
-      number: 1,
+      number: '01',
       description: "Bag up all your dirty clothes",
     },
     {
       title: "We Collect",
       image: hw2,
-      number: 2,
+      number: '02',
       description: "Collection from your doorStep",
     },
     {
       title: "We Clean",
       image: laundryWash,
-      number: 3,
+      number: '03',
       description: "Wash, dry and fold your items",
     },
     {
       title: "We Return",
       image: deliveryGuy,
-      number: 4,
+      number: '04',
       description: "Order will be delivered in 24hrs",
     },
   ]
@@ -116,14 +116,14 @@ const Home = () => {
       <div>
           <div className='contact-bg'>
             <div className='container '>
-              <div className='text-white'>
+              <div className=''>
                 <h1>WE OFFER THE BEST <br/>LAUNDRY SERVICES</h1>
                 <p className=''>
                   The Laundry Company provides a premium laundry, ironing,dry <br/> cleaning and alteration service for domestic and small businesses <br/> in the SouthWest.
                 </p>
                 <div>
 
-                  <button type="button" className='px-4 py-3 border-0 bg-white mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
+                  <button type="button" className='px-4 py-3 border-0 mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
                   <div>
                     <div
                       className="modal fade"
@@ -135,7 +135,7 @@ const Home = () => {
                       <div className="modal-dialog  modal-dialog-centered">
                         <div className="modal-content">
                           <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">
+                            <h5 className="modal-title">
                              Request Callback
                             </h5>
                             <button
@@ -181,249 +181,175 @@ const Home = () => {
             </div>
           </div>
       </div>
-      <div>
-        <div className='container'>
-        <div className="row justify-content-center mt-5">
-          <div className="col-12 col-md-6 mb-4">
-            <div className=" w-100 text-center p-4">
-              <img src={homeIcon1} alt="" />
-              <div className="w-50 mx-auto">
-                <h5>Laundry Services</h5>
-                <p>Let us pick up your dirty laundry, sort it, stains, dry, fold and deliver back to you in one neat, easy package</p>
-                <button className='border-0 bg-white text-black'><Link className='read-more' to='more'>READ MORE</Link></button>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 mb-4">
-            <div className="w-100 p-4 text-center">
-              <img src={homeIcon2} alt="" />
-              <div className="w-50 mx-auto">
-                <h5>Dry Cleaning Services</h5>
-                <p>Students and local residents love on our reliable dry cleaning services for the fast, accurate, top quality results.</p>
-                <button className='border-0 bg-white  '><Link className='read-more' to='more'>READ MORE</Link></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-       
-      <section>
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-md-6">
-            <div className="w-75">
-              <div>
-                <p className='text-head'>Services you will love</p>
-                <h2>WE ARE PASSIONATE ABOUT LAUNDRY</h2>
-                <p>
-                  We are professionals in the laundry and dry cleaning business, which
-                  means we always stay up to date on the latest technologies, cleaning
-                  methods, and solutions for dealing with stains or delicate fabrics.
-                </p>
-                <p>
-                  Plus, we maintain the highest standards of business integrity by
-                  following local and national regulations and environmental safety
-                  rules. We are passionate about changing the way you think about
-                  laundry!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div>
-              <img src={bannerContent} alt="" className="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </div>
-      </section>
+      <div  className=''> 
 
-
-      {/* our procedures */}
-      <section>
-        <div className="container">
-          <div className='my-5 text-center'>
-            <p className='text-head'>In 4 easy steps</p>
-            <h3>How PressPerfect works</h3>
-          </div>
-          <div className='row justify-content-center'>
-            {WorkSteps.map((step, index) => (
-                <div
-                key={index}
-                className="col-12 col-sm-6 col-md-3  text-center"
-              >
-                <div>
-                  <p>{step.title}</p>
-                </div>
-                <div className='rounded-50 img img-border mx-auto d-flex align-items-center justify-content-center '>
-                  <img src={step.image} alt=""  />
-                </div>
-                <span className='img-span text-bold'>{step.number}</span>
-                <div className='mt-4'>
-                  <p>{step.description}</p>
-                </div>
-              </div>
-            ))}
-            </div>
-        </div>
-      </section>
-      
-      {/* our features */}
-      <section>
         <div>
-          <div className="home-body my-5">
-            <div className="container my-5">
-              <div className="py-5 lh-1">
-                <p className='text-head'>Our features</p>
-                <h3>WHY CHOOSE US</h3>
+          <div className=''>
+            <div className='container'>
+            <div className='my-5 text-center'>
+                <h3 className=''>SERVICES</h3>
               </div>
-              <div className="row g-4">
-              {Features.map((feature, index) => (
-                  <div className="col-md-6 col-lg-4" key={index}>
-                    <div className="d-flex justify-content-between p-4">
-                      <div className='pe-4'>
-                        <img src={feature.icon} alt="" />
-                      </div>
-                      <div>
-                        <p>{feature.title}</p>
-                        <p>{feature.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-                
-              </div>
+            <HomeService />
             </div>
           </div>
         </div>
-      </section>
-
-      {/* testimonial */}
-      <section>
-        <div className='container'>
-          <div className='my-5 text-center'>
-            <p className='text-head'>Testimonials</p>
-            <h3>WHAT OUR CLIENTS SAY</h3>
-          </div>
-          <div className='row my-5 g-4'>
-            {testimonials.map((testimonial, index) => (
-              <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
-                <div className='testimonial-body p-4'>
-                  <div className='d-flex pb-2'>
-                    <img src={imgTest} alt="" className='img-testimonial me-3' />
-                    <div className='lh-1'>
-                      <h4>{testimonial.name}</h4>
-                      <span>{testimonial.title}</span>
-                    </div>
-                  </div>
-                  <div>
-                    <p>{testimonial.text}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* price table */}
-      <div>
-      <section>
-        <div >
-          <div className='home-body'>
-           <div>
-             <PriceTable />
-            </div> 
-
-          {/* blog section */}
-
-            <div className="container">
-              <div className='text-center my-4'>
-                <h2>FROM THE BLOG</h2>
-              </div>
-              <div className="row">
-                <div className="col-12 col-md-4 mb-4">
-                  <div className="card" style={{ width: "18rem" }}>
-                    <img src={cardImg} className="card-img-top" alt="..." />
-                    <div className="card-body justify-content-center">
-                      <h5 className="card-title">7 Sept 2021</h5>
-                      <h5 className="card-title">When to Skip the Fabric Softener</h5>
-                      <p className="card-text">
-                        Fabric softeners are great for making clothes and linens feel soft
-                        and fluffy. But before you wash another load, read this. There are
-                        types of clothing that should NEVER touch these products.
-                      </p>
-                      <Link to="blog" className="btn btn-primary" >
-                      READ MORE
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-4 mb-4">
-                  <div className="card" style={{ width: "18rem" }}>
-                    <img src={cardImg} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title">7 Sept 2021</h5>
-                      <h5 className="card-title">
-                        How to Get Rid of Smoke Odor on Clothes
-                      </h5>
-                      <p className="card-text">
-                        We all know that smell. That stale ashtray stink that follows you
-                        home and seems to engulf everything you touch. Yuck! How do you
-                        get that unmistakable smoke stench out of your clothes?.
-                      </p>
-                      <Link to="blog" className="btn btn-primary" >
-                      READ MORE
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-4 mb-4">
-                  <div className="card" style={{ width: "18rem" }}>
-                    <img src={cardImg} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title">7 Sept 2021</h5>
-                      <h5 className="card-title">20 Ways to Use Old, Mismatched Socks</h5>
-                      <p className="card-text">
-                        For ages, man has tried to solve the problem of mismatched socks.
-                        It seems when a perfectly good pair of socks goes into the laundry
-                        basket…only one of them makes it out of the dryer.
-                      </p>
-                      <Link to="blog" className="btn btn-primary" >
-                      READ MORE
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-
-      {/* special order */}
-      <section>
-        <div>
+        
+        <section>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6 col-sm-12 d-flex justify-content-center mt-5">
-              <img src={laundryMachine} alt="washing Machine" className="img-fluid" />
+            <div className="col-md-6">
+              <div className="w-75">
+                <div>
+                  <p className='text-head'>Services you will love</p>
+                  <h2>WE ARE PASSIONATE ABOUT LAUNDRY</h2>
+                  <p>
+                    We are professionals in the laundry and dry cleaning business, which
+                    means we always stay up to date on the latest technologies, cleaning
+                    methods, and solutions for dealing with stains or delicate fabrics.
+                  </p>
+                  <p>
+                    Plus, we maintain the highest standards of business integrity by
+                    following local and national regulations and environmental safety
+                    rules. We are passionate about changing the way you think about
+                    laundry!
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="col-md-6 col-sm-12 pt-5 text-center">
-              <h3>Special Order</h3>
-              <p>
-                We are offering a special order for our customers.
-                <br />
-                <Link to="order" className="btn btn-primary mt-3">Order Now</Link>
-              </p>
+            <div className="col-md-6">
+              <div>
+                <img src={bannerContent} alt="" className="img-fluid" />
+              </div>
             </div>
           </div>
         </div>
+        </section>
+
+
+        {/* our procedures */}
+        <section>
+          <div className="container">
+            <div className='my-5 text-center'>
+              <p className='text-head'>In 4 easy steps</p>
+              <h3>How PressPerfect works</h3>
+            </div>
+            <div className='row justify-content-center'>
+              {WorkSteps.map((step, index) => (
+                  <div
+                  key={index}
+                  className="col-12 col-sm-6 col-md-3  text-center"
+                >
+                  <div>
+                    <p>{step.title}</p>
+                  </div>
+                  <div className='rounded-50 img img-border mx-auto d-flex align-items-center justify-content-center '>
+                    <img src={step.image} alt=""  />
+                  </div>
+                  <span className='img-span fw-bold'>{step.number}</span>
+                  <div className='mt-4'>
+                    <p>{step.description}</p>
+                  </div>
+                </div>
+              ))}
+              </div>
+          </div>
+        </section>
+        
+        {/* our features */}
+        <section>
+          <div>
+            <div className="home-body my-5">
+              <div className="container my-5">
+                <div className="py-5 lh-1">
+                  <p className='text-head'>Our features</p>
+                  <h3>WHY CHOOSE US</h3>
+                </div>
+                <div className="row g-4">
+                {Features.map((feature, index) => (
+                    <div className="col-md-6 col-lg-4" key={index}>
+                      <div className="d-flex justify-content-between p-4">
+                        <div className='pe-4'>
+                          <img src={feature.icon} alt="" />
+                        </div>
+                        <div>
+                          <p>{feature.title}</p>
+                          <p>{feature.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* testimonial */}
+        <section>
+          <div className='container'>
+            <div className='my-5 text-center'>
+              <p className='text-head'>Testimonials</p>
+              <h3>WHAT OUR CLIENTS SAY</h3>
+            </div>
+            <div className='row my-5 g-4'>
+              {testimonials.map((testimonial, index) => (
+                <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
+                  <div className='testimonial-body p-4'>
+                    <div className='d-flex pb-2'>
+                      <img src={imgTest} alt="" className='img-testimonial me-3' />
+                      <div className='lh-1'>
+                        <h4>{testimonial.name}</h4>
+                        <span>{testimonial.title}</span>
+                      </div>
+                    </div>
+                    <div>
+                      <p>{testimonial.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </section>
+
+        {/* price table */}
+        <div>
+        <section>
+          <div >
+            <div className='home-body'>
+            <div>
+              <PriceTable />
+              </div> 
+
+        
+            </div>
+          </div>
+        </section>
         </div>
-      </section>
+
+        {/* special order */}
+        <section>
+          <div>
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-6 col-sm-12 d-flex justify-content-center mt-5">
+                <img src={laundryMachine} alt="washing Machine" className="img-fluid" />
+              </div>
+              <div className="col-md-6 col-sm-12 pt-5 text-center">
+                <h3>Special Order</h3>
+                <p>
+                  We are offering a special order for our customers.
+                  <br />
+                  <Link to="order" className="btn btn-primary mt-3">Order Now</Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+      </div>
 
 
     </>

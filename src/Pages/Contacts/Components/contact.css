@@ -1,10 +1,10 @@
 .contact-bg {
 
-  background-image: url('../../../Assets/images/HomeImage/banner-content-bg.jpg');
+  background-image: url('../../../Assets/images/HomeImage/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
 
 }
@@ -12,3 +12,44 @@
 .contact-icon {
   font-size: 30px;
 }
+
+.contact-info{
+  background-image: url('../../../Assets/images/HomeImage/contact-bg-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .contact-bg {
+
+    background-image: url('../../../Assets/images/HomeImage/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  
+  }
+
+  .contact-info{
+    background-image: url('../../../Assets/images/HomeImage/contact-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+/* @media (min-width: 1281px) {
+
+  .contact-bg {
+
+    background-image: url('../../../Assets/images/HomeImage/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+  
+  }
+} */
