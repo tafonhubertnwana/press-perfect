@@ -137,9 +137,11 @@ const Contact = () => {
                         >
                         </textarea>
                         </div>
-                    <button type="submit" className="btn btn-primary justify-content-center">
-                      Submit
-                    </button>
+                        <div className='text-center'>   
+                          <button type="submit" className="btn btn-primary btn btn-primary mt-3 order-now ">
+                            Submit
+                          </button>
+                        </div>
                   </form>
                 </div>
               </div>

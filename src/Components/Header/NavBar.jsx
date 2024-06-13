@@ -11,7 +11,7 @@ const NavBar = () => {
     },
     {
       label: 'ABOUT US',
-      link: '/aboutus',
+      link: 'aboutus',
       dropdownItems: [
         {
           label: 'Team',
