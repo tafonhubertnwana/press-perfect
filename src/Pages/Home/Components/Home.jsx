@@ -13,12 +13,12 @@ import homeIcon5 from '../../../Assets/images/HomeImage/home-icons05.png';
 import homeIcon6 from '../../../Assets/images/HomeImage/home-icons06.png';
 import homeIcon8 from '../../../Assets/images/HomeImage/home-icons08.png';
 import homeIcon9 from '../../../Assets/images/HomeImage/home-icons09.png';
-import imgTest from '../../../Assets/images/HomeImage/testimonials-img03.jpg';
 import cardImg from '../../../Assets/images/HomeImage/home-img02.jpg';
 
 import laundryMachine from '../../../Assets/images/HomeImage/laundry_washing_machine.png'
 import PriceTable from './PriceTable';
 import HomeService from './HomeService';
+import TestimonialSection from './TestimonialSection';
 
 const Home = () => {
 
@@ -89,24 +89,7 @@ const Home = () => {
 
   ]
 
-  const testimonials = [
-    {
-      name: 'Olivia Jones',
-      title: 'Client',
-      text: "I have yet to come across a company as professional, hardworking & service oriented as Press Perfect. It has been a pleasure working with a company that works hard to keep their flawless standard."
-    },
-    {
-      name: 'Olivia Jones',
-      title: 'Client',
-      text: "Hey guys! Thanks for coordinating all of the shipments and deliveries. Everything arrived on schedule and is in good shape. you guys do a fantastic job staying on top of everything for us. Thank you!"
-    },
-    {
-      name: 'Olivia Jones',
-      title: 'Client',
-      text: "I absolutely love Press Perfect. The lockers are 24/7, making dropping off and picking up dry cleaning quick and easy. The quality of the dry cleaning is great. Overall, a great service that I'd highly recommend to anyone!"
-    },
-  ]
-
+  
 
 
 
@@ -292,23 +275,8 @@ const Home = () => {
               <p className='text-head'>Testimonials</p>
               <h3>WHAT OUR CLIENTS SAY</h3>
             </div>
-            <div className='row my-5 g-4'>
-              {testimonials.map((testimonial, index) => (
-                <div className='col-lg-4 col-md-6 col-sm-12' key={index}>
-                  <div className='testimonial-body p-4'>
-                    <div className='d-flex pb-2'>
-                      <img src={imgTest} alt="" className='img-testimonial me-3' />
-                      <div className='lh-1'>
-                        <h4>{testimonial.name}</h4>
-                        <span>{testimonial.title}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <p>{testimonial.text}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            <div>
+              <TestimonialSection />
             </div>
 
           </div>
@@ -342,7 +310,7 @@ const Home = () => {
                 <p>
                   We are offering a special order for our customers.
                   <br />
-                  <Link to="order" className="btn btn-primary mt-3">Order Now</Link>
+                  <Link to="order" className="btn btn-primary mt-3 order-now">Order Now</Link>
                 </p>
               </div>
             </div>

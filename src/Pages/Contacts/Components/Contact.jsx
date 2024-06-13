@@ -126,7 +126,7 @@ const Contact = () => {
                     <div className="mb-3">
                         <label for="subject" className="form-label">Subject</label>
                         <textarea 
-                        className="form-control" 
+                        className="form-control bg-transparent" 
                         id="subject" 
                         name="subject" 
                         placeholder="Write something.." 
