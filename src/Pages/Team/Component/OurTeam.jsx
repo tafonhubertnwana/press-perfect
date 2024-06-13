@@ -29,9 +29,14 @@ const OurTeam = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    arrows: false,
+   
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -41,15 +46,15 @@ const OurTeam = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
       {
@@ -57,6 +62,11 @@ const OurTeam = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 500,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          pauseOnHover: true,
+          arrows: false,
         },
       },
     ],
@@ -81,7 +91,7 @@ const OurTeam = () => {
                   src={member.image}
                   alt=""
                   className="team img-fluid rounded-circle"
-                  style={{ width: '100%', maxWidth: '240px', height: 'auto' }}
+                  style={{ width: '100%', maxWidth: '240px', height: '240px' }}
                 />
                 <div className="mt-3 text-center">
                   <h3 className="h5">{member.name}</h3>
