@@ -50,6 +50,16 @@ const Head = () => {
   <div>
     <NavBar />
   </div>
+  <div className=''>
+    <div className="call">
+      <div className='p-4  bg-white'>
+        <div >
+
+    <FaPhone className='fa fa-call'/>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
     </>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Modal from './Modal';
 
 
 const PriceTable = () => {
@@ -30,7 +31,10 @@ const PriceTable = () => {
                         </div>
                       </div>
                       <div className='text-center mb-3'>
-                        <button className='px-5 py-3 request-btn bg-white '>  ORDER NOW</button>
+                        <button className='px-5 py-3 request-btn bg-white ' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">  ORDER NOW</button>
+                        <div>
+                          <Modal />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -53,6 +57,9 @@ const PriceTable = () => {
                       </div>
                       <div className='text-center mb-3'>
                         <button className='px-5 py-3 request-btn bg-white'> ORDER NOW</button>
+                        <div>
+                          <Modal />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -74,7 +81,10 @@ const PriceTable = () => {
                         </div>
                       </div>
                       <div className='text-center mb-3'>
-                        <button className='px-5 py-3 request-btn bg-white'> ORDER NOW</button>
+                        <button className='px-5 py-3 request-btn bg-white' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> ORDER NOW</button>
+                        <div>
+                          <Modal />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -96,7 +106,10 @@ const PriceTable = () => {
                         </div>
                       </div>
                       <div className='text-center mb-3'>
-                        <button className='px-5 py-3 request-btn bg-white '> ORDER NOW</button>
+                        <button className='px-5 py-3 request-btn bg-white ' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> ORDER NOW</button>
+                        <div>
+                          <Modal />
+                        </div>
                       </div>
                     </div>
                   </div>

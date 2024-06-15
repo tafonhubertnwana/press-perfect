@@ -28,3 +28,28 @@
   top: 0;
   z-index: 1020;
 }
+
+.fa-size{
+
+}
+
+.call{
+  
+    position: fixed;
+    overflow: hidden;
+    transition: .2s ease;
+    transition-delay: .2s;
+    display: block;
+    z-index: 550;
+    box-sizing: content-box;
+    background-clip: content-box;
+    cursor: pointer;
+    bottom: 30px;
+    left: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fa-call{
+  font-size: 50px;
+  line-height: 80px;
+}

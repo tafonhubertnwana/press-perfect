@@ -8,6 +8,7 @@ import HomeService from './HomeService';
 import TestimonialSection from './TestimonialSection';
 import HomeFeatures from './HomeFeatures';
 import HomeProcedures from './HomeProcedures';
+import Modal from './Modal';
 
 const Home = () => {
 
@@ -25,54 +26,7 @@ const Home = () => {
 
                   <button type="button" className='px-4 py-3 border-0 mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
                   <div>
-                    <div
-                      className="modal fade"
-                      id="exampleModal"
-                      tabIndex={-1}
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div className="modal-dialog  modal-dialog-centered">
-                        <div className="modal-content">
-                          <div className="modal-header">
-                            <h5 className="modal-title">
-                             Request Callback
-                            </h5>
-                            <button
-                              type="button"
-                              className="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            />
-                          </div>
-                          <div className="modal-body">
-                            <form>
-                              <div className="mb-3">
-                                <label htmlFor="recipient-name" className="col-form-label">
-                                  Recipient:
-                                </label>
-                                <input type="text" className="form-control" id="recipient-name" />
-                              </div>
-                              <div className="mb-3">
-                                <label htmlFor="message-text" className="col-form-label">
-                                  Message:
-                                </label>
-                                <textarea
-                                  className="form-control"
-                                  id="message-text"
-                                  defaultValue={""}
-                                />
-                              </div>
-                            </form>
-                          </div>
-                          <div className="modal-footer justify-content-center">
-                            <button type="button" className='px-5 py-3 request-btn bg-white mt-2'>
-                              REQUEST
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <Modal /> 
                   </div>
                 </div>
               </div>
@@ -86,7 +40,7 @@ const Home = () => {
           <div className=''>
             <div className='container'>
             <div className='my-5 text-center'>
-                <h3 className='fw-bold'>SERVICES</h3>
+                <h3 className='fw-bold'>OUR SERVICES</h3>
               </div>
             <HomeService />
             </div>
