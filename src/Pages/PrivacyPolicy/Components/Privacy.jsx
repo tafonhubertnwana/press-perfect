@@ -39,7 +39,7 @@ const Privacy = () => {
     <div>
       <div className="contact-bg" style={{paddingTop: 200, paddingBottom: 200}}>
         <div className="container">
-          <div className="">
+          <div className="text-center text-sm-start">
             <h1>PRIVACY POLICY</h1>
           </div>
         </div>

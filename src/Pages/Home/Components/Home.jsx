@@ -17,7 +17,7 @@ const Home = () => {
       <div>
           <div className='contact-bg'>
             <div className='container '>
-              <div className=''>
+              <div className='text-center text-sm-start'>
                 <h1>WE OFFER THE BEST <br/>LAUNDRY SERVICES</h1>
                 <p className=''>
                   The Laundry Company provides a premium laundry, ironing,dry <br/> cleaning and alteration service for domestic and small businesses <br/> in the SouthWest.
@@ -40,15 +40,15 @@ const Home = () => {
           <div className=''>
             <div className='container'>
             <div className='my-5 text-center'>
-                <h3 className='fw-bold'>OUR SERVICES</h3>
+                <h3><span className='discount'>Our</span> services</h3>
               </div>
             <HomeService />
             </div>
           </div>
         </div>  
         <section>
-        <div className="container">
-          <div className="row align-items-center">
+        <div className="container sticky">
+          <div className="row align-items-center ">
             <div className="col-md-6">
               <div className="w-75">
                 <div>

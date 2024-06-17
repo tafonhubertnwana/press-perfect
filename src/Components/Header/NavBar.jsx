@@ -55,18 +55,18 @@ const NavBar = () => {
 
   return (
     <div>
-  <nav className="navbar navbar-expand-lg border-top">
+  <nav className="navbar navbar-expand-lg border-top  ">
     <div className="container py-2">
       <div className="d-lg-none d-flex align-items-center">
         <img src={logo} alt="" className="img-fluid me-2" />
         <div className="d-flex flex-column lh-1">
-          <span className='fs-6 fw-bolder'>PRESS PREFECT</span>
+          <span className='fs-6 fw-bolder'>PressedPerfect</span>
           <span className='fs-6'>Your Laundry Center</span>
         </div>
       </div>
-      <div className="navbar-nav ms-auto d-lg-none">
+      <div className="navbar-nav ms-auto d-lg-none ">
         <button
-          className="navbar-toggler"
+          className="navbar-toggler text-black "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -74,7 +74,7 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon text-black border bg-black"></span>
         </button>
       </div>
       <div className="d-flex align-items-center justify-content-between w-100">

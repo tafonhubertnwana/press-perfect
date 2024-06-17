@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="d-flex align-items-center mb-3">
                 <img src={logo} alt="" className=""/>
                 <div className="ps-2 d-flex flex-column lh-1">
-                  <span className='fs-5 fw-bolder'>PRESS PREFECT</span>
+                  <span className='fs-5 fw-bolder'>PressedPerfect</span>
                   <span className="footer-detail">Your Laundry Center</span>
                 </div>
               </div>

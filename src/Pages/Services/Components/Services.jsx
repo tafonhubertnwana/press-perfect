@@ -6,7 +6,7 @@ const Services = () => {
     <div>
       <div className='contact-bg'>
           <div className='container'>
-            <div className=''>
+            <div className='text-center text-sm-start'>
               <h1>SERVICES</h1>
               <p>&nbsp;</p>
               <p>
@@ -19,7 +19,7 @@ const Services = () => {
           <div className=''>
             <div className='container'>
             <div className='my-5 text-center'>
-                <h3 className='fw-bold'>SERVICES</h3>
+                <h3> <span className='discount'>Our</span> Services</h3>
               </div>
             <HomeService />
             </div>

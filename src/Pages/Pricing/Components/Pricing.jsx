@@ -7,7 +7,7 @@ const Pricing = () => {
     <>
       <div className='contact-bg' style={{paddingTop: 150, paddingBottom: 150}}>
         <div className='container'>
-          <div className='text-black'>
+          <div className='text-black text-center text-sm-start'>
             <h1>PRICING</h1>
             <p>&nbsp;</p>
             <p>

@@ -5,7 +5,7 @@ const Gallery = () => {
     <div>
       <div className='contact-bg' style={{paddingTop: 150, paddingBottom: 150}}>
           <div className='container'>
-            <div className=''>
+            <div className='text-center text-sm-start'>
               <h1>GALLERY</h1>
               <p>&nbsp;</p>
               <p>

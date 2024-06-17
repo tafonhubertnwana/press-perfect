@@ -11,7 +11,7 @@ const AboutUs = () => {
       <div>
       <div className='contact-bg'>
           <div className='container '>
-            <div className=''>
+            <div className='text-center text-sm-start'>
               <h1>ABOUT US</h1>
               <p>&nbsp;</p>
               <p>
