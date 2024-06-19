@@ -52,30 +52,33 @@ const HomeFeatures = () => {
 
   return (
     <div>
-      <div className="home-body my-5">
-              <div className="container my-5">
-                <div className="py-5 lh-1">
-                  <p className='text-head'>Our features</p>
-                  <h3>WHY CHOOSE US</h3>
-                </div>
-                <div className="row g-4">
-                {Features.map((feature, index) => (
-                    <div className="col-md-6 col-lg-4" key={index}>
-                      <div className="d-flex justify-content-between p-4">
-                        <div className='pe-4'>
-                          <img src={feature.icon} alt="" />
-                        </div>
-                        <div>
-                          <p>{feature.title}</p>
-                          <p>{feature.description}</p>
+      <div className='py-3 py-md-5 wave-white-gray position-relative'>
+
+        <div className="home-body ">
+                <div className="container">
+                  <div className="py-5 lh-1">
+                    <p className='text-head'>Our features</p>
+                    <h3>WHY CHOOSE US</h3>
+                  </div>
+                  <div className="row g-4">
+                  {Features.map((feature, index) => (
+                      <div className="col-md-6 col-lg-4" key={index}>
+                        <div className="d-flex justify-content-between p-4">
+                          <div className='pe-4'>
+                            <img src={feature.icon} alt="" />
+                          </div>
+                          <div>
+                            <p>{feature.title}</p>
+                            <p>{feature.description}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                  
+                    ))}
+                    
+                  </div>
                 </div>
               </div>
-            </div>
+      </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import hw1 from '../../../Assets/images/HomeImage/hw-1.png';
-import hw2 from '../../../Assets/images/HomeImage/hw-2.png';
+import order from '../../../Assets/images/HomeImage/hw-1.png';
+import deliveryBox from '../../../Assets/images/HomeImage/hw-2.png';
 import laundryWash from '../../../Assets/images/HomeImage/laundry-wash.png';
 import deliveryGuy from '../../../Assets/images/HomeImage/delivery-guy.png';
 
@@ -9,13 +9,13 @@ const HomeProcedures = () => {
   const WorkSteps = [
     {
       title: "You Order",
-      image: hw1,
+      image: order,
       number: '01',
       description: "Bag up all your dirty clothes",
     },
     {
       title: "We Collect",
-      image: hw2,
+      image: deliveryBox,
       number: '02',
       description: "Collection from your doorStep",
     },
@@ -48,7 +48,7 @@ const HomeProcedures = () => {
                   className="col-12 col-sm-6 col-md-3  text-center"
                 >
                   <div>
-                    <p>{step.title}</p>
+                    <h5>{step.title}</h5>
                   </div>
                   <div className='rounded-50 img img-border mx-auto d-flex align-items-center justify-content-center '>
                     <img src={step.image} alt=""  />

@@ -22,7 +22,7 @@ const AboutUs = () => {
       </div>
       <section>
         <div className="container">
-          <div className="row mt-5 justify-content-center">
+          <div className="row mt-5 justify-content-center g-4">
             <div className="col-md-4 text-center">
               <div>
                 <h3><span className='discount'>Our</span> Vision</h3>

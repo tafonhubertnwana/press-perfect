@@ -30,18 +30,30 @@ const Modal = () => {
               <form>
                 <div className="mb-3">
                 
-                  <input type="text" placeholder='Name *' className="form-control p-3" id="recipient-name" />
+                <input
+                  type="text"
+                  placeholder='Name *'
+                  className="form-control p-3"
+                  id="recipient-name"
+                  required
+                  />
                 </div>
                 <div className="mb-3">
-                <input type="text" placeholder='Phone *' className="form-control p-3" id="recipient-number" />
+                <input 
+                type="text" 
+                placeholder='Phone *' 
+                className="form-control p-3" 
+                id="recipient-number" 
+                required
+                />
 
                 </div>
+                <div className="modal-footer justify-content-center">
+                  <button type="submit" className='px-5 py-3 request-btn bg-white mt-2'>
+                    REQUEST
+                  </button>
+                </div>
               </form>
-            </div>
-            <div className="modal-footer justify-content-center">
-              <button type="button" className='px-5 py-3 request-btn bg-white mt-2'>
-                REQUEST
-              </button>
             </div>
           </div>
         </div>

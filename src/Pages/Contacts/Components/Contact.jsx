@@ -76,7 +76,7 @@ const Contact = () => {
 
               <div className='col-md-6'>
                 <div className='mb-5'>
-                  <form action="https://getform.io/f/7ec526fc-2ea4-40a1-bb70-ad4e4ed25074" method="POST">
+                  <form action="https://formspree.io/f/xeqyydyy" method="POST">
                     <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">
                         Your Name

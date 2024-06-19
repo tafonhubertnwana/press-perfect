@@ -52,3 +52,7 @@
     background-position: left;
   }
 } */
+
+.wave-white-gray{
+  background: url('../../../Assets/images/HomeImage/wave-white-gray.png') left top repeat-x;
+}

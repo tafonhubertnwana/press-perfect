@@ -40,7 +40,7 @@ const Home = () => {
           <div className=''>
             <div className='container'>
             <div className='my-5 text-center'>
-                <h3><span className='discount'>Our</span> services</h3>
+                <h3><span className='discount'>Our</span> Services</h3>
               </div>
             <HomeService />
             </div>
@@ -130,8 +130,11 @@ const Home = () => {
                 <p>
                   We are offering a special order for our customers.
                   <br />
-                  <Link to="order" className="btn btn-primary mt-3 order-now">Order Now</Link>
                 </p>
+                  <button type="button" className='px-4 py-3 border-0 mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
+                  <div>
+                    <Modal /> 
+                  </div>
               </div>
             </div>
           </div>

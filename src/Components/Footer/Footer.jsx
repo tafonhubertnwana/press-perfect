@@ -37,11 +37,11 @@ const Footer = () => {
               <p className="footer-detail">We offer a complete range od textile care services, backed by the latest technical knowledge and resources</p>
               <div>
                 <p>
-                  Receive news right on your email
+                  Receive news right on your email 
                 </p>
                 <form action="" method="post">
                   <div>
-                    <input type="text" placeholder="Enter your e-mail here " className="form-control mb-3 "/>
+                    <input type="text" placeholder="Enter your e-mail here * " className="form-control mb-3 "/>
                     <button type="submit" className="px-5 py-3 footer-subscribe border-0">SUBSCRIBE</button>
                   </div>
                 </form>
