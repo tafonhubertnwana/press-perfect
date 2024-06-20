@@ -5,7 +5,11 @@ const FullPrice = () => {
     <div>
       <div className="container">
         <div className='mt-5 pb-3 justify-content-center'>
-          <h4 className='text-center full-size'>FULL PRICE LIST</h4>
+          <h4 className='text-center discount '>[ Our Service Prices ]</h4>
+          <h4 className='text-center full-size fw-bold'>FULL PRICE TABLE</h4>
+          <p className='text-center  pt-3'>
+          Laundry service pricing is volume based. Dry cleaning is priced by item type. <br/> Give us a call to review pricing and services today!
+          </p>
         </div>
         <section>
         <div class="row">

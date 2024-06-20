@@ -11845,3 +11845,42 @@ cursor: pointer;
   font-size: 10px;
   position: absolute;
 }
+
+
+.team:before{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.team-name{
+  position: relative;
+  transition: .3s;
+  display: inline-block;
+}
+
+.team-name:before{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #52b765;
+  -webkit-transition: width .2s linear;
+  transition: width .2s linear;
+}

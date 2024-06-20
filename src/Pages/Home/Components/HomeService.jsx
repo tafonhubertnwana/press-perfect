@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import homeIcon1 from '../../../Assets/images/HomeImage/bedsheets.webp';
 import homeIcon2 from '../../../Assets/images/HomeImage/dry-cleaning.webp';
 import homeIcon3 from '../../../Assets/images/HomeImage/wash-iron.webp';
-import homeIcon4 from '../../../Assets/images/HomeImage/steam-iron.webp';
+import homeIcon4 from '../../../Assets/images/HomeImage/steam.jpeg';
 
 const HomeService = () => {
   return (
@@ -44,7 +44,7 @@ const HomeService = () => {
   </div>
   <div className="col-6 col-md-6 col-lg-3 mb-4 ">
     <div className="w-100 text-center p-4">
-      <img src={homeIcon3} alt="" className="w-100 h-100 img-radius" />
+      <img src={homeIcon4} alt="" className="w-100 h-100 img-radius" />
       <div className="w-75 mx-auto pt-3">
         <h5 className='fw-bold'>Steam Iron</h5>
         <p>
@@ -63,7 +63,7 @@ const HomeService = () => {
     <div className="w-100 p-4 text-center">
       <img src={homeIcon1} alt="" className="w-100 h-100 img-radius"  />
       <div className="w-75 mx-auto pt-3">
-        <h5 className='fw-bold'>Besdheets Cleaning</h5>
+        <h5 className='fw-bold'>Bedsheets Cleaning</h5>
         <p>
           For you bedsheets we do multiple wah cycles with high quality
           datergent, conditioner and softener.

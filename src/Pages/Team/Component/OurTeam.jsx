@@ -76,8 +76,13 @@ const OurTeam = () => {
     <div>
       <div className="container">
         <div>
-          <div className="container text-center mt-5">
-            <h3>OUR TEAM</h3>
+          <div className="container text-center mt-5 w-50">
+            <h6 className='fw-bold discount '>[ Our Team ]</h6>
+
+            <h2 className='fw-bold'>Laundry Specialists</h2>
+
+            <p>Our team’s goal each day is to earn your business with each visit and to make
+            your experience with us the absolute best.</p>
           </div>
         </div>
         <div className="row justify-content-center my-5">
@@ -87,14 +92,17 @@ const OurTeam = () => {
                 className="d-flex flex-column align-items-center p-4"
                 key={index}
               >
-                <img
-                  src={member.image}
-                  alt=""
-                  className="team img-fluid rounded-circle"
-                  style={{ width: '100%', maxWidth: '240px', height: '240px' }}
-                />
+                <div className=' position relative'>
+
+                  <img
+                    src={member.image}
+                    alt=""
+                    className=" team img-fluid rounded-circle"
+                    style={{ width: '200px', height: '200px' }}
+                  />
+                </div>
                 <div className="mt-3 text-center">
-                  <h3 className="h5">{member.name}</h3>
+                  <h3 className="h5 team-name  fw-bold">{member.name}</h3>
                   <p className="mb-0">{member.role}</p>
                 </div>
               </div>

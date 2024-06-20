@@ -11,42 +11,41 @@ const Contact = () => {
   const [name , setName] = useState("")
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState("")
-  const [password, setPassword] = useState("")
 
   const contactItems = [
     {
       id: 1,
       icon: <FaMapLocationDot />,
-      contactTitle: "Address",
+      contactTitle: "Post Address",
       contactDetails: "Central-Market Buea "
     },
     {
       id: 2,
       icon: <FaPhone />,
-      contactTitle: "Phone:",
+      contactTitle: "Contact Phone",
       contactDetails: "(+237) 679-048-674 "
     },
     {
       id: 3,
       icon: <HiOutlineMailOpen />,
-      contactTitle: "E-Mail:",
+      contactTitle: "E-Mail Address",
       contactDetails: "info@Yoursite.com "
     },
     {
       id: 4,
       icon: <FaRegClock />,
       contactTitle: "Opening Hours",
-      contactDetails: "8:00 - 18:00 Mon-Sat "
+      contactDetails: "Mon-Sat 08:00 AM - 06:00 PM"
     },
   ]
 
   return (
     <>
       <div>
-        <div className='contact-bg' style={{paddingTop: 150, paddingBottom: 150}}>
+        <div className='contact-bg' style={{paddingTop: 50, paddingBottom: 50}}>
           <div className='container '>
             <div className='text-center text-sm-start'>
-              <h1>CONTACTS</h1>
+              <h1>CONTACT Us</h1>
               <p>&nbsp;</p>
               <p>
                 if you do not find the answer to your questions related to our laundry <br></br>services, feel free to contact us. We are here to help
@@ -56,36 +55,45 @@ const Contact = () => {
         </div>
         <div className='contact-info'>
           <div className='container my-5'>
-            <div className='row '>
-              <div className='col-md-6'>
+            <div className=''>
+              <div className=' text-center mt-5 '>
+                <h5 className='fw-bold discount icon-title'>[ Get in Touch With Us ]</h5>
+                <h1 className='fw-bold'>Contact Information</h1>
+              </div>
+              <div className=' d-flex justify-content-evenly'>
                 {
                   contactItems.map((contact) => (
-                    <div className="mb-5 d-flex" key={contact.id}>
-                      <div className="fa pe-5 contact-icon fw-bolder">
-                        {contact.icon}
+                    <div className="mb-5" key={contact.id}>
+                      <div className="fa  contact-icon mt-4 fw-bolder">
+                        <div className=' p-3 text-center'>
+                          {contact.icon}
+                        </div>
                       </div>
-                      <div className='d-flex flex-column'>
-                        <span>{contact.contactTitle}</span>
-                        <span>&nbsp;</span>
-                        <span>{contact.contactDetails}</span>
+                      <div className='text-center' >
+                        <h5 className='d-flex flex-column lh-3 fw-bold mt-3'>{contact.contactTitle}</h5>
+                        
+                        <address>{contact.contactDetails}</address>
                       </div>
                     </div>
                   ))
                 }
               </div>
 
-              <div className='col-md-6'>
+            </div>
+              <div className='justify-text-center w-50 '>
                 <div className='mb-5'>
+                  <div>
+
+                    <h2 className='fw-bold '>Get in Touch. <br/> We're Here to Help.</h2>
+                    <p>We look forward to helping you create and maintain a clean, healthy environment that’s as enjoyable as it is functional</p>
+                  </div>
                   <form action="https://formspree.io/f/xeqyydyy" method="POST">
                     <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">
-                        Your Name
-                      </label>
                       <input
                         type="text"
                         className="form-control"
                         placeholder="Username" 
-                        aria-label="Username"
+                        aria-label="Your Name"
                         id="exampleInputEmail1"
                         aria-describedby="basic-addon1"
                         name="name"
@@ -93,38 +101,30 @@ const Contact = () => {
                         onChange={(e) => setName(e.target.value)}
 
                       />
-                      <label htmlFor="exampleInputEmail1" className="form-label">
-                        Email address
-                      </label>
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter email"
-                        name="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)} 
+                      <div className=' py-2 d-flex justify-content-between'> 
 
-                      />
-                      <div id="emailHelp" className="form-text text-center">
-                        We'll never share your email with anyone else.
+                        <input
+                          type="email"
+                          className="form-control pe-2"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter email"
+                          name="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)} 
+
+                        />
+                        <input
+                          type="text"
+                          className="form-control"
+                          
+                          
+                          placeholder='Phone'
+                          name="phone"
+                          
+                        />
                       </div>
-                    </div>
-                    <div className="mb-3">
-                      <label htmlFor="exampleInputPassword1" className="form-label">
-                        Password
-                      </label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        id="exampleInputPassword1"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                      />
-                    </div>
-                    <div className="mb-3">
-                        <label for="subject" className="form-label">Subject</label>
+                      
                         <textarea 
                         className="form-control bg-transparent" 
                         id="subject" 
@@ -136,16 +136,15 @@ const Contact = () => {
 
                         >
                         </textarea>
-                        </div>
                         <div className='text-center'>   
                           <button type="submit" className="btn btn-primary btn btn-primary mt-3 order-now ">
                             Submit
                           </button>
                         </div>
+                    </div>     
                   </form>
                 </div>
               </div>
-            </div>
           </div>
         </div>
         <div>

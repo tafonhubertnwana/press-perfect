@@ -1,17 +1,13 @@
 .contact-bg {
 
-  background-image: url('../../../Assets/images/HomeImage/bg.png');
+  background-image: url('../../../Assets/images/HomeImage/dst-bg-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left top;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+ 
+ 
 
 }
 
-.contact-icon {
-  font-size: 30px;
-}
 
 .contact-info{
   background-image: url('../../../Assets/images/HomeImage/contact-bg-desktop.png');
@@ -53,3 +49,23 @@
   
   }
 } */
+
+
+.contact-icon{
+  width: 85px;
+  height: 85px;
+  background-color: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .05);
+  border-radius: 50%;
+  position: relative;
+  align-items: center;
+  font-size: 26px;
+}
+
+.icon-title{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: .07em;
+}
