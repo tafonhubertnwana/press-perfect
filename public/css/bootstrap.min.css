@@ -48,7 +48,7 @@
 
 body {
   margin: 0;
-  font-family: 'Dosis', san-sarif!important;
+  font-family: "Poppins", sans-serif !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -152,7 +152,9 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+  color: #1a1a1a7b;
+  font-size: 16px;
 }
 
 abbr[data-bs-original-title],
@@ -11883,4 +11885,14 @@ cursor: pointer;
   background-color: #52b765;
   -webkit-transition: width .2s linear;
   transition: width .2s linear;
+}
+
+.title-head{
+  font-family: Poppins, sans-serif;
+  color: #323232;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 600;
+  margin-top: 13px;
+
 }

@@ -3,6 +3,7 @@ import bannerContent from '../../../Assets/images/HomeImage/home_laundry_service
 import HomeProcedures from '../../Home/Components/HomeProcedures';
 import HomeFeatures from '../../Home/Components/HomeFeatures';
 import OurTeam from '../../Team/Component/OurTeam';
+import { TiTick } from "react-icons/ti";
 
 
 const AboutUs = () => {
@@ -51,40 +52,41 @@ const AboutUs = () => {
         </div>
       </section>
       <section>
-          <div className="container">
-              <div className="row align-items-center">
-                <div className="col-md-6">
-                  <div className="w-75">
-                    <div>
-                      <p className='text-head'>Services you will love</p>
-                      <h2>WE ARE PASSIONATE ABOUT LAUNDRY</h2>
-                      <p>
-                        We are professionals in the laundry and dry cleaning business, which
-                        means we always stay up to date on the latest technologies, cleaning
-                        methods, and solutions for dealing with stains or delicate fabrics.
-                      </p>
-                      <p>
-                        Plus, we maintain the highest standards of business integrity by
-                        following local and national regulations and environmental safety
-                        rules. We are passionate about changing the way you think about
-                        laundry!
-                      </p>
-                    </div>
-                  </div>
+      <div className="container ">
+          <div className="row align-items-center ">
+            <div className="col-md-6">
+              <div className="">
+                <div>
+                  <div className=' discount icon-title'>More than 5+ Years of Experience</div>
+                  <h4 className='title-head pt-2'>WE ARE PASSIONATE ABOUT LAUNDRY</h4>
+                  <p>
+                  We are professionals in the laundry and dry cleaning business, which means we always stay up to date on the latest technologies, cleaning methods, and solutions for dealing with stains or delicate fabrics. Plus, we maintain the highest standards of business integrity by following local and national regulations and environmental safety rules. We are passionate about the way you think about laundry!
+                  </p>
                 </div>
-                <div className="col-md-6">
-                  <div>
-                    <img src={bannerContent} alt="" className="img-fluid" />
-                  </div>
+                <div className="d-flex">
+
+                <div className='pe-4  p'>
+                  <ul>
+                    <li> <TiTick className='discount' /> 100% Customer Satisfaction</li>
+                    <li> <TiTick className='discount'/> Free Collection & Delivery</li>
+                    <li> <TiTick className='discount'/> Affordable Price</li>
+                    <li> <TiTick className='discount'/> Best Quality</li>
+                  </ul>
+                </div>
+                
                 </div>
               </div>
-            </div>
-      </section>
-      {/* our procedures */}
-      <section>
-        <HomeProcedures />
-      </section>
 
+            </div>
+            <div className="col-md-6">
+              <div>
+                <img src={bannerContent} alt="" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
       <section>
         <div>
           <HomeFeatures />
