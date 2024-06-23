@@ -37,12 +37,12 @@ const Privacy = () => {
 
   return (
     <div>
-      <div className="contact-bg" style={{paddingTop: 200, paddingBottom: 200}}>
-        <div className="container">
-          <div className="text-center text-sm-start">
-            <h1>PRIVACY POLICY</h1>
+      <div className="contact-bg" >
+      <div className="container ">
+            <div className=" position-absolute top-50">
+              <h1 className='header-title'>Private Policy</h1>
+            </div>
           </div>
-        </div>
       </div>
       <div className="container my-5">
         <div className="privacy-article">

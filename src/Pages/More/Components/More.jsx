@@ -38,10 +38,10 @@ const More = () => {
   return (
     <div>
       <div>
-        <div className="contact-bg " style={{paddingTop: 50, paddingBottom: 50}}>
-          <div className="container">
-            <div className="text-center text-sm-start text-white">
-              <h1>MORE</h1>
+        <div className="contact-bg " >
+          <div className="container ">
+            <div className=" position-absolute top-50">
+              <h1 className='header-title'>More</h1>
             </div>
           </div>
         </div>

@@ -56,9 +56,9 @@ const HomeFeatures = () => {
 
         <div className="home-body ">
                 <div className="container">
-                  <div className="py-5 lh-1">
-                    <p className='text-head'>Our features</p>
-                    <h3>WHY CHOOSE US</h3>
+                  <div className="py-5 text-center">
+                    <div className='icon-title discount'>[ Our Advantages ]</div>
+                    <h4 className='title-head'>Why Choose Us</h4>
                   </div>
                   <div className="row g-4">
                   {Features.map((feature, index) => (
@@ -68,7 +68,7 @@ const HomeFeatures = () => {
                             <img src={feature.icon} alt="" />
                           </div>
                           <div>
-                            <p>{feature.title}</p>
+                            <h6>{feature.title}</h6>
                             <p>{feature.description}</p>
                           </div>
                         </div>

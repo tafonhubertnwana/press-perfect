@@ -31,13 +31,13 @@ const OurTeam = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 3000,
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     arrows: false,
    
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -77,9 +77,9 @@ const OurTeam = () => {
       <div className="container">
         <div>
           <div className="container text-center mt-5 w-50">
-            <h6 className='fw-bold discount '>[ Our Team ]</h6>
+            <div className=' discount icon-title'>[ Our Team ]</div>
 
-            <h2 className='fw-bold'>Laundry Specialists</h2>
+            <h4 className='title-head'>Laundry Specialists</h4>
 
             <p>Our team’s goal each day is to earn your business with each visit and to make
             your experience with us the absolute best.</p>
@@ -102,7 +102,7 @@ const OurTeam = () => {
                   />
                 </div>
                 <div className="mt-3 text-center">
-                  <h3 className="h5 team-name  fw-bold">{member.name}</h3>
+                  <h4 className="h5 team-name  ">{member.name}</h4>
                   <p className="mb-0">{member.role}</p>
                 </div>
               </div>

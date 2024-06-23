@@ -5,13 +5,13 @@ import FullPrice from './FullPrice'
 const Pricing = () => {
   return (
     <>
-      <div className='contact-bg' style={{paddingTop: 50, paddingBottom: 50}}>
-        <div className='container'>
-          <div className='text-white text-center text-sm-start'>
-            <h2 className='fw-bold'>PRICING</h2>
+      <div className='contact-bg'>
+        <div className='container container-fluid-xl'>
+          <div className=''>
+            <h1 className='header-title pt-5'>Prices</h1>
             <p>&nbsp;</p>
-            <p>
-              Our prices suit your pocket is one od our priority. You can choose one of our 4 <br/> pricing plans according to your needs.
+            <p className='text-white'>
+              Our prices suit your pocket is one of our priority. You can choose one of our 4 <br/> pricing plans according to your needs.
             </p>
           </div>
         </div>

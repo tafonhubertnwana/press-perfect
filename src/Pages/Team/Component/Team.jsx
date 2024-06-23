@@ -6,7 +6,7 @@ const Team = () => {
 
   return (
     <div>
-      <div className='contact-bg' style={{paddingTop: 50, paddingBottom: 50}}>
+      <div className='contact-bg' >
         <div className='container'>
           <div className=' text-white text-center text-sm-start'>
             <h1>OUR TEAM</h1>

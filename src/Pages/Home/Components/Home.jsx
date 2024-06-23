@@ -87,7 +87,7 @@ const Home = () => {
           <div className="row my-5">
               <div>
                 <div className='d-flex justify-content-between'>
-                  <div className="d-flex p-4 bg-black my-3 me-1">
+                  <div className="d-flex p-3 bg-whiter  my-3 me-4">
                     <FaPhoneAlt />
                     <div>
                       <h4>Save Time & Money</h4>
@@ -126,9 +126,25 @@ const Home = () => {
         </section>
         
         {/* our features */}
-        <section>
+        <section className='container pt-5'>
           <div>
-            <HomeFeatures />
+            <div >
+              <div className="text-center">
+                <div className='discount icon-title'>[ important Information ]</div>
+                <h4 className="title-head py-2">Trusted Laundry Service</h4>
+              </div>
+              <div className='d-flex justify-content-around'>
+                  <div>
+                    <button type='button' className='px-5 py-3 bg-white'>Our Approach</button>
+                  </div>
+                  <div>
+                    <button type='button'  className='px-5 py-3 bg-white'>Ouestion / Answers</button>
+                  </div>
+                  <div>
+                    <button type='button'  className='px-5 py-3 bg-white'>Why Choose Us</button>
+                  </div>
+              </div>
+            </div>
           </div>
         </section>
 

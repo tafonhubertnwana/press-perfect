@@ -53,7 +53,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #fdfcfc;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent
 }
@@ -11849,12 +11849,11 @@ cursor: pointer;
 }
 
 
-.team:before{
+.team:hover{
   position: absolute;
     top: 50%;
     left: 50%;
     z-index: 2;
-    display: block;
     content: '';
     width: 0;
     height: 0;
@@ -11872,7 +11871,7 @@ cursor: pointer;
   display: inline-block;
 }
 
-.team-name:before{
+.team-name:hover{
   content: '';
   display: block;
   position: absolute;
@@ -11895,4 +11894,16 @@ cursor: pointer;
   font-weight: 600;
   margin-top: 13px;
 
+}
+
+.header-title{
+      font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 19px;
 }

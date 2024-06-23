@@ -11,7 +11,7 @@ const Services = () => {
 
   return (
     <div>
-      <div className='contact-bg' style={{paddingTop: 50, paddingBottom: 50}}>
+      <div className='contact-bg'>
           <div className='container'>
             <div className='text-center text-sm-start text-white'>
               <h1>SERVICES</h1>
@@ -26,9 +26,9 @@ const Services = () => {
           <div className=''>
             <div className='container'>
             <div className='my-5 text-center'>
-                <h3 className='discount'>[ Our Services ]</h3>
-                <h2 className='fw-bold'>Dry Cleaning & Laundry,
-                Free Delivery</h2>
+                <div className='discount icon-title'>[ Our Services ]</div>
+                <h4 className='title-head pt-2'>Dry Cleaning & Laundry,
+                Free Delivery</h4>
               </div>
             <HomeService />
             </div>

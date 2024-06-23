@@ -6,10 +6,10 @@ const Faq = () => {
     <>
       <div>
         <div>
-            <div className='contact-bg' style={{paddingTop: 50, paddingBottom: 50}}>
+            <div className='contact-bg' >
               <div className='container '>
-                <div className='text-white text-sm-start'>
-                  <h1 className='fw-bold'>FAQ</h1>
+                <div className='position-absolute top-50 left-50'>
+                  <h1 className='header-title '>FAQ</h1>
                  
                   
                 </div>
@@ -22,11 +22,11 @@ const Faq = () => {
               <div>
                 <div className="container">
                   <div>
-                      <div className='mt-5'>
-                        <p className='text-center discount fw-bold'>[ Frequently Asked Question ]</p>
-                        <h2 className='text-center fw-bold'> Reliable Answers to Our Most
-                        Common Questions </h2>
-                        <p className="text-center ">
+                      <div className='mt-5 text-center'>
+                        <p className=' discount icon-title'>[ Frequently Asked Question ]</p>
+                        <h4 className=' title-head mb-4'> Reliable Answers to Our Most<br/>
+                        Common Questions </h4>
+                        <p className="r ">
                         We can save you money on soap, water, heating and electricity. So you can enjoy even more <br/>of the things you love. Our prices are simple and affordable.                        </p>
                       </div>
                   </div>

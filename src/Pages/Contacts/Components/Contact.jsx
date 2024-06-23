@@ -42,14 +42,10 @@ const Contact = () => {
   return (
     <>
       <div>
-        <div className='contact-bg' style={{paddingTop: 50, paddingBottom: 50}}>
+        <div className='contact-bg' >
           <div className='container '>
-            <div className='text-center text-sm-start'>
-              <h1>CONTACT Us</h1>
-              <p>&nbsp;</p>
-              <p>
-                if you do not find the answer to your questions related to our laundry <br></br>services, feel free to contact us. We are here to help
-              </p>
+            <div className='position-absolute top-50'>
+              <h1 className='header-title'>Contact Us</h1>
             </div>
           </div>
         </div>
@@ -57,16 +53,21 @@ const Contact = () => {
           <div className='container my-5'>
             <div className=''>
               <div className=' text-center mt-5 '>
-                <h5 className='fw-bold discount icon-title'>[ Get in Touch With Us ]</h5>
-                <h1 className='fw-bold'>Contact Information</h1>
+                <h5 className='discount icon-title'>[ Get in Touch With Us ]</h5>
+                <h1 className='title-head'>Contact Information</h1>
+                <p className='py-3'>
+                  if you do not find the answer to your questions related to our laundry <br></br>services, feel free to contact us. We are here to help
+                </p>
               </div>
-              <div className=' d-flex justify-content-evenly'>
+              <div className=' d-flex justify-content-evenly '>
                 {
                   contactItems.map((contact) => (
-                    <div className="mb-5" key={contact.id}>
-                      <div className="fa  contact-icon mt-4 fw-bolder">
-                        <div className=' p-3 text-center'>
-                          {contact.icon}
+                    <div className="mb-5 p-5 " key={contact.id}>
+                      <div className="fa text-center contact-icon mt-4 fw-bolder ">
+                        <div className=''>
+                          <div className=' p-3 text-center '>
+                            {contact.icon}
+                          </div>
                         </div>
                       </div>
                       <div className='text-center' >
@@ -80,71 +81,73 @@ const Contact = () => {
               </div>
 
             </div>
-              <div className='justify-text-center w-50 '>
-                <div className='mb-5'>
-                  <div>
+              
+          </div>
+          <div className='position-relative container '>
+            <div className='mb-5 position-relative'>
+              <div className='text-center'>
+                <h4 className='title-head '>Get in Touch. <br/> We're Here to Help.</h4>
+                <p className='pt-4'>We look forward to helping you create and maintain a clean, <br/> healthy environment that’s as enjoyable as it is functional</p>
+              </div>
+              <div className=' w-50 '>
+                <form action="https://formspree.io/f/xeqyydyy" className='' method="POST">
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Username" 
+                      aria-label="Your Name"
+                      id="exampleInputEmail1"
+                      aria-describedby="basic-addon1"
+                      name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
 
-                    <h2 className='fw-bold '>Get in Touch. <br/> We're Here to Help.</h2>
-                    <p>We look forward to helping you create and maintain a clean, healthy environment that’s as enjoyable as it is functional</p>
-                  </div>
-                  <form action="https://formspree.io/f/xeqyydyy" method="POST">
-                    <div className="mb-3">
+                    />
+                    <div className=' py-2 d-flex justify-content-between'> 
+
+                      <input
+                        type="email"
+                        className="form-control pe-2"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                        name="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)} 
+
+                      />
                       <input
                         type="text"
                         className="form-control"
-                        placeholder="Username" 
-                        aria-label="Your Name"
-                        id="exampleInputEmail1"
-                        aria-describedby="basic-addon1"
-                        name="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-
+                        
+                        
+                        placeholder='Phone'
+                        name="phone"
+                        
                       />
-                      <div className=' py-2 d-flex justify-content-between'> 
+                    </div>
+                    
+                      <textarea 
+                      className="form-control bg-transparent" 
+                      id="subject" 
+                      name="subject" 
+                      placeholder="Write something.." 
+                      style={{height:200}}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
 
-                        <input
-                          type="email"
-                          className="form-control pe-2"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                          placeholder="Enter email"
-                          name="email"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)} 
-
-                        />
-                        <input
-                          type="text"
-                          className="form-control"
-                          
-                          
-                          placeholder='Phone'
-                          name="phone"
-                          
-                        />
+                      >
+                      </textarea>
+                      <div className='text-center'>   
+                        <button type="submit" className="btn btn-primary btn btn-primary mt-3 order-now ">
+                          Submit
+                        </button>
                       </div>
-                      
-                        <textarea 
-                        className="form-control bg-transparent" 
-                        id="subject" 
-                        name="subject" 
-                        placeholder="Write something.." 
-                        style={{height:200}}
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-
-                        >
-                        </textarea>
-                        <div className='text-center'>   
-                          <button type="submit" className="btn btn-primary btn btn-primary mt-3 order-now ">
-                            Submit
-                          </button>
-                        </div>
-                    </div>     
-                  </form>
-                </div>
+                  </div>     
+                </form>
               </div>
+            </div>
           </div>
         </div>
         <div>

@@ -1,11 +1,44 @@
-.contact-bg {
+/* .contact-bg {
 
   background-image: url('../../../Assets/images/HomeImage/dst-bg-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
- 
+ background-position: center;
+ height: 300px;
  
 
+} */
+
+
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+  .contact-bg {
+
+    background-image: url('../../../Assets/images/HomeImage/dst-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: right center;
+   height: 300px;
+   margin-bottom: 6rem;
+   
+  
+  }
+}
+
+@media only screen 
+and (min-width : 1824px) {
+  /* Styles */
+  .contact-bg {
+
+    background-image: url('../../../Assets/images/HomeImage/dst-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+   height: 300px;
+   
+  
+  }
 }
 
 
@@ -60,7 +93,8 @@
   position: relative;
   align-items: center;
   font-size: 26px;
-}
+  margin-left: 3rem;
+} 
 
 .icon-title{
   font-size: 16px;
