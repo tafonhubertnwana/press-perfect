@@ -1,5 +1,6 @@
 import React from 'react';
 import './privacy.css';
+import NavBar from '../../../Components/Header/NavBar';
 
 const Privacy = () => {
     const privacyPolicy = [
@@ -36,7 +37,11 @@ const Privacy = () => {
     ]
 
   return (
-    <div>
+    
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
       <div className="contact-bg" >
       <div className="container ">
             <div className=" position-absolute top-50">

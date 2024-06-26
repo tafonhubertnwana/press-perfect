@@ -52,12 +52,11 @@ and (min-width : 1824px) {
 @media (max-width: 767px) {
   .contact-bg {
 
-    background-image: url('../../../Assets/images/HomeImage/bg-mobile.png');
+    background-image: url('../../../Assets/images/HomeImage/dst-bg-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left top;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    background-position: right center;
+    height: 150px;
   
   }
 
@@ -69,19 +68,6 @@ and (min-width : 1824px) {
   }
 }
 
-/* @media (min-width: 1281px) {
-
-  .contact-bg {
-
-    background-image: url('../../../Assets/images/HomeImage/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-    padding-top: 10rem;
-    padding-bottom: 15rem;
-  
-  }
-} */
 
 
 .contact-icon{

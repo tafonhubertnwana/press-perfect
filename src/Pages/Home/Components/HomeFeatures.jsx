@@ -52,9 +52,9 @@ const HomeFeatures = () => {
 
   return (
     <div>
-      <div className='py-3 py-md-5 wave-white-gray position-relative'>
+      <div className='py-3 py-md-5  position-relative'>
 
-        <div className="home-body ">
+        <div className="">
                 <div className="container">
                   <div className="py-5 text-center">
                     <div className='icon-title discount'>[ Our Advantages ]</div>

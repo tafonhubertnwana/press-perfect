@@ -1,6 +1,7 @@
 import React from 'react';
 import imgTest from '../../../Assets/images/HomeImage/testimonials-img03.jpg';
 import './testimonial.css'
+import NavBar from '../../../Components/Header/NavBar';
 
 const Testimonial = () => {
   const testimonials = [
@@ -53,7 +54,11 @@ const Testimonial = () => {
 
   return (
     <>
-      <div>
+    
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
         <div className='contact-bg '>
           <div className='container'>
             <div className='text-center text-sm-start'>

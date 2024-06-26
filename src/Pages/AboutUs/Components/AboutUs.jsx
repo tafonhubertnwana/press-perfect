@@ -4,13 +4,19 @@ import HomeProcedures from '../../Home/Components/HomeProcedures';
 import HomeFeatures from '../../Home/Components/HomeFeatures';
 import OurTeam from '../../Team/Component/OurTeam';
 import { TiTick } from "react-icons/ti";
+import NavBar from '../../../Components/Header/NavBar';
+import sectionImage from '../../../Assets/images/HomeImage/about_img.jpg'
 
 
 const AboutUs = () => {
   return (
-    <div>
-      <div>
-      <div className='contact-bg'>
+    <div className='position-relative'>
+      
+      <div >
+        <div className='bar'>
+          <NavBar />
+        </div>
+        <div className='contact-bg'>
           <div className='container '>
             <div className='text-center text-sm-start'>
               <h1>ABOUT US</h1>
@@ -22,37 +28,7 @@ const AboutUs = () => {
         </div>
       </div>
       <section>
-        <div className="container">
-          <div className="row mt-5 justify-content-center g-4">
-            <div className="col-md-4 text-center">
-              <div>
-                <h3><span className='discount'>Our</span> Vision</h3>
-                <p>
-                  PressPerfect is the smart laundry solution to all your laundry woes. We provide affordable laundry service that is designed around you and your needs. Getting the laundry done has never been so easy!
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 text-center">
-              <div>
-                <h3> <span className='discount'>Our</span> Mission</h3>
-                <p>
-                  Today, Laundry Care's unique personalized laundry experience is available nationwide. Our clients love the quality, reliability, and flexibility of our personalized laundry service over the regular, old wash & fold model.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 text-center">
-              <div>
-                <h3><span className='discount'>Our</span> Strengths</h3>
-                <p>
-                  PressPerfect offers the personalized, quality service you want with the flexibility you need, all at an affordable price. Simply tell us your preferences and your Laundress returns it right to your door in 48 hours.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-      <div className="container ">
+        <div className="container ">
           <div className="row align-items-center ">
             <div className="col-md-6">
               <div className="">
@@ -86,15 +62,40 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-     
       <section>
         <div>
           <HomeFeatures />
         </div>
       </section>
+      <section className='section-history'>
+        <div className='d-flex'>
+          <div className='section-image'>
+            <img src={sectionImage} alt="" style={{height: '600px'}}/>
+          </div>
+          <div className='left-section'>
+            <div className='bg-white p-5'>
+              <div className='icon-title discount'>
+                [ Our History ]
+              </div>
+              <h4 className='title-head pt-2'>
+                Laundry & Dry Cleaning Foundation
+              </h4>
+              <div>
+                <p>
+                Founded in 2019, we follow a dream and an We aim to serve our customers in a way that far exceeds expectation. Being one of the leading laundry service providers, we know our customers’ mindset. It is not easy to come home from a hectic day at the office and rush to the nearest laundry service with your clothes. So, we have an array of services to make things easy for you.
+                </p>
+
+                <p>
+                You need not tolerate late deliveries, low standard of work merged with high prices. Our services cater to all your laundering and ironing, dry cleaning, shoe repairs, upholstery cleaning, etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section>
-        <div className = 'home-body pt-5'> 
+        <div > 
           <OurTeam />
         </div>
       </section>

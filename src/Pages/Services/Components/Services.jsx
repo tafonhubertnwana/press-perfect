@@ -4,13 +4,18 @@ import bannerContent from '../../../Assets/images/HomeImage/home_laundry_service
 import washAndFold from '../../../Assets/images/HomeImage/wash-and-fold-2.jpg';
 import homeDelivery from '../../../Assets/images/HomeImage/home-delivery.png';
 import { SlArrowRight } from "react-icons/sl";
+import NavBar from '../../../Components/Header/NavBar';
 
 
 const Services = () => {
 
 
   return (
-    <div>
+    
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
       <div className='contact-bg'>
           <div className='container'>
             <div className='text-center text-sm-start text-white'>

@@ -11848,30 +11848,55 @@ cursor: pointer;
   position: absolute;
 }
 
+.personal-info {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+}
 
-.team:hover{
+.team{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+.team:before{
   position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    content: '';
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, .2);
-    border-radius: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    pointer-events: none;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .team-name{
+  font-size: 20px;
+  line-height: 30px;
+  color: #323232;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 22px 0 0 0;
+  -webkit-transition: color .3s;
+  transition: color .3s;
   position: relative;
-  transition: .3s;
   display: inline-block;
 }
 
-.team-name:hover{
+.team-name:before{
   content: '';
   display: block;
   position: absolute;

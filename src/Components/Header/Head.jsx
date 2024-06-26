@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaPhone, FaRegClock, FaMapLocationDot } from "react-icons/fa6";
 import logo from '../../Assets/images/HomeImage/MainLogo.png'
-import NavBar from './NavBar';
 
 const Head = () => {
   const infoItems = [
@@ -47,10 +46,8 @@ const Head = () => {
           ))}
         </div>
       </div>
-      <div className='sticky'>
-        <NavBar />
-      </div>
-      <div className=''>
+      
+      {/* <div className=''>
         <div className="call">
           <div className='p-4  bg-white'>
             <div >
@@ -59,7 +56,7 @@ const Head = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     </>
   )

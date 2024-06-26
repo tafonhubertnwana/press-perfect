@@ -25,7 +25,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <div className="container">
-          <div className="row py-5 mt-5">
+          <div className="row py-5">
             <div className="col-12 col-md-4 mb-4 mb-md-0">
               <div className="d-flex align-items-center mb-3">
                 <img src={logo} alt="" className=""/>

@@ -1,11 +1,16 @@
 import React from 'react';
 import OurTeam from './OurTeam';
+import NavBar from '../../../Components/Header/NavBar';
 
 const Team = () => {
 
 
   return (
-    <div>
+  
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
       <div className='contact-bg' >
         <div className='container'>
           <div className=' text-white text-center text-sm-start'>

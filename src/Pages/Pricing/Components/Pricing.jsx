@@ -1,10 +1,15 @@
 import React from 'react'
 import PriceTable from '../../Home/Components/PriceTable'
 import FullPrice from './FullPrice'
+import NavBar from '../../../Components/Header/NavBar'
 
 const Pricing = () => {
   return (
     <>
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
       <div className='contact-bg'>
         <div className='container container-fluid-xl'>
           <div className=''>
@@ -28,6 +33,7 @@ const Pricing = () => {
       <section>
         <FullPrice />
       </section>
+      </div>
     </>
   )
 }

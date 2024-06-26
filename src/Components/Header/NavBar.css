@@ -23,11 +23,7 @@
   }
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
+
 
 .fa-size{
 
@@ -58,4 +54,12 @@
   position:-webkit-sticky; 
   position:sticky; 
   top:0;
+  
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: #fff;
 }

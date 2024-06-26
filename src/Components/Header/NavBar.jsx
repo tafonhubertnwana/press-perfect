@@ -55,7 +55,7 @@ const NavBar = () => {
 
   return (
     <div>
-  <nav className="navbar navbar-expand-lg border-top position-sticky ">
+  <nav className="navbar navbar-expand-lg border-top  ">
     <div className="container py-2">
       <div className="d-lg-none d-flex align-items-center">
         <img src={logo} alt="" className="img-fluid me-2" />

@@ -2,7 +2,8 @@ import React from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
 import bannerContent from '../../../Assets/images/HomeImage/home_laundry_services.png';
-import laundryMachine from '../../../Assets/images/HomeImage/laundry_washing_machine.png'
+import laundryMachine from '../../../Assets/images/HomeImage/laundry_washing_machine.png';
+import laundry from '../../../Assets/images/HomeImage/laundry.webp';
 import PriceTable from './PriceTable';
 import HomeService from './HomeService';
 import TestimonialSection from './TestimonialSection';
@@ -11,31 +12,41 @@ import HomeProcedures from './HomeProcedures';
 import Modal from './Modal';
 import { TiTick } from "react-icons/ti";
 import { FaPhoneAlt } from "react-icons/fa";
+import Features from './Features';
+import NavBar from '../../../Components/Header/NavBar';
+import Approach from '../../../Components/Approach';
+import ChooseUs from '../../../Components/ChooseUs';
+
 
 const Home = () => {
 
   return (
     <>
-      <div>
-          <div className='contact-bg'>
-            <div className='container '>
-              <div className='text-center text-sm-start'>
-                <h1>WE OFFER THE BEST <br/>LAUNDRY SERVICES</h1>
-                <p className=''>
-                  The Laundry Company provides a premium laundry, ironing,dry <br/> cleaning and alteration service for domestic and small businesses <br/> in the SouthWest.
-                </p>
-                <div>
+    
+      <div className='position-relative'>
+        <div>
+        <div className='bar'>
+          <NavBar />
+        </div>
+        <div className='contact-bg'>
+          <div className='container '>
+            <div className='text-center text-sm-start'>
+              <h1>WE OFFER THE BEST <br/>LAUNDRY SERVICES</h1>
+              <p className=''>
+                The Laundry Company provides a premium laundry, ironing,dry <br/> cleaning and alteration service for domestic and small businesses <br/> in the SouthWest.
+              </p>
+              <div>
 
-                  <button type="button" className='px-4 py-3 border-0 mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
-                  <div>
-                    <Modal /> 
-                  </div>
+                <button type="button" className='px-4 py-3 border-0 mt-2 order-now' data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ORDER NOW</button>
+                <div>
+                  <Modal /> 
                 </div>
               </div>
-              <div>
-              </div>
+            </div>
+            <div>
             </div>
           </div>
+        </div>
       </div>
       <div  className=''> 
         
@@ -63,7 +74,7 @@ const Home = () => {
                 </div>
                 <div>
                   <div className='ps-4'>
-                    <div className='fa  contact-icon mt-4 fw-bolder p-3 text-center'>
+                    <div className='fa  contact-icon mt-4 fw-bolder p-3 text-center mb-4'>
 
                       <FaPhoneAlt />
                     </div>
@@ -84,45 +95,54 @@ const Home = () => {
         </div>
 
         <div className="container">
-          <div className="row my-5">
-              <div>
-                <div className='d-flex justify-content-between'>
-                  <div className="d-flex p-3 bg-whiter  my-3 me-4">
-                    <FaPhoneAlt />
-                    <div>
-                      <h4>Save Time & Money</h4>
-                      <p>
-                        No more wasted time driving to the laundromats, we pickup and deliver for free!
-                      </p>
-                    </div>                 
-                  </div>
-                  <div className="d-flex p-5 bg-white">
-                    <FaPhoneAlt />
-                    <div>
-                      <h4>Pay Online in Seconds</h4>
-                      <p>
-                       Manage your Press account and billing online from your smartphone or computer                          
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex p-5 bg-white">
-                    <FaPhoneAlt />
-                    <div>
-                      <h4> Eco-Friendly</h4>
-                      <p>
-                        We use safe and clean perc-free solvents, so you, and the Earth, can look good.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
+          <div>
+            <Features />
           </div>
         </div>
         </section>
         {/* our procedures */}
         <section>
           <HomeProcedures />
+        </section>
+        <section className='section-history pt-5'>
+          <div className='d-flex'>
+            <div className='section-image'>
+              <img src={laundry} alt="" style={{height: '600px'}}/>
+            </div>
+            <div className='left-sect'>
+              <div className='bg-white p-5'>
+                <div className='icon-title discount'>
+                  [ laundry service for your business! ]
+                </div>
+                <h4 className='title-head pt-2'>
+                  Commercial Laundry Service
+                </h4>
+                <div>
+                  <p>
+                  Large corporations have determined that there is a financial benefit to outsourcing back office work because it saves money. Allowing us to do your laundry is cost effective and will allow you and your employees to focus on your core business. We offer smart solutions to meet your commercial laundry needs. Our Commercial Laundry Clients include:                  </p>
+
+                 <div className="d-flex justify-content-center">
+                  <div className=''>
+                    <ul>
+                      <li> <TiTick className='discount' /> Salons & Spas</li>
+                      <li> <TiTick className='discount'/> Restaurants and Gaterers</li>
+                      <li> <TiTick className='discount'/> Religious Organizations</li>
+                      <li> <TiTick className='discount'/> Daycare centers</li>
+                    </ul>
+                  </div>
+                  <div className=''>
+                    <ul>
+                      <li> <TiTick className='discount' /> Assisted Living / Nursing Homes</li>
+                      <li> <TiTick className='discount'/> Hotels & Motels</li>
+                      <li> <TiTick className='discount'/>Nail Salons</li>
+                      <li> <TiTick className='discount'/> Althletic Facilities / Gyms</li>
+                    </ul>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         
         {/* our features */}
@@ -144,6 +164,8 @@ const Home = () => {
                     <button type='button'  className='px-5 py-3 bg-white'>Why Choose Us</button>
                   </div>
               </div>
+              <Approach />
+              <ChooseUs />
             </div>
           </div>
         </section>
@@ -201,8 +223,13 @@ const Home = () => {
           </div>
         </section>
       </div>
+      <div className='mt-5'>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.649151446558!2d9.275848674490856!3d4.173113219901949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613259651819a3%3A0x754210aa92e62bff!2sBuea!5e0!3m2!1sen!2scm!4v1716235049726!5m2!1sen!2scm" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
 
-
+    </div>
     </>
   )
 }

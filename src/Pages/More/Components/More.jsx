@@ -1,4 +1,5 @@
 import React from 'react'
+import NavBar from '../../../Components/Header/NavBar'
 
 const More = () => {
 
@@ -37,7 +38,11 @@ const More = () => {
 
   return (
     <div>
-      <div>
+      
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
         <div className="contact-bg " >
           <div className="container ">
             <div className=" position-absolute top-50">

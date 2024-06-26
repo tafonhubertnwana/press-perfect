@@ -85,27 +85,29 @@ const OurTeam = () => {
             your experience with us the absolute best.</p>
           </div>
         </div>
-        <div className="row justify-content-center my-5">
+        <div className="row justify-content-center my-5 position-relative">
           <Slider {...settings}>
             {Teams.map((member, index) => (
-              <div
+              <a href="#" className='personal-info'>
+                <div
                 className="d-flex flex-column align-items-center p-4"
                 key={index}
               >
-                <div className=' position relative'>
+                <div className=' team'>
 
                   <img
                     src={member.image}
                     alt=""
-                    className=" team img-fluid rounded-circle"
+                    className="  "
                     style={{ width: '200px', height: '200px' }}
                   />
                 </div>
-                <div className="mt-3 text-center">
-                  <h4 className="h5 team-name  ">{member.name}</h4>
-                  <p className="mb-0">{member.role}</p>
+                  <div className="mt-3 text-center">
+                    <div className="h5 team-name  ">{member.name}</div>
+                    <p className="mb-0">{member.role}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </Slider>
         </div>

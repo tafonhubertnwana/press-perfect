@@ -5,6 +5,7 @@ import { FaRegClock } from "react-icons/fa6";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import './contact.css'
+import NavBar from '../../../Components/Header/NavBar';
 
 const Contact = () => {
 
@@ -41,10 +42,13 @@ const Contact = () => {
 
   return (
     <>
-      <div>
+      <div className='position-relative'>
+        <div className='bar'>
+          <NavBar />
+        </div>
         <div className='contact-bg' >
           <div className='container '>
-            <div className='position-absolute top-50'>
+            <div className='position-absolute top-100'>
               <h1 className='header-title'>Contact Us</h1>
             </div>
           </div>
