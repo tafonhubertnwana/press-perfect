@@ -11932,3 +11932,24 @@ cursor: pointer;
     position: relative;
     margin-top: 19px;
 }
+
+.table-price .tt-item:nth-child(odd) {
+  background-color: #f8f9f8;
+}
+
+ .tt-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 6px 28px;
+  border-radius: 19px;
+
+}

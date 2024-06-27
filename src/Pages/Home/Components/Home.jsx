@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
 import bannerContent from '../../../Assets/images/HomeImage/home_laundry_services.png';
@@ -19,6 +19,12 @@ import ChooseUs from '../../../Components/ChooseUs';
 
 
 const Home = () => {
+
+  const [activeComponent, setActiveComponent] = useState('approach');
+
+  const handleButtonClick = (component) => {
+    setActiveComponent(component);
+  };
 
   return (
     <>
@@ -153,19 +159,40 @@ const Home = () => {
                 <div className='discount icon-title'>[ important Information ]</div>
                 <h4 className="title-head py-2">Trusted Laundry Service</h4>
               </div>
-              <div className='d-flex justify-content-around'>
-                  <div>
-                    <button type='button' className='px-5 py-3 bg-white'>Our Approach</button>
-                  </div>
-                  <div>
-                    <button type='button'  className='px-5 py-3 bg-white'>Ouestion / Answers</button>
-                  </div>
-                  <div>
-                    <button type='button'  className='px-5 py-3 bg-white'>Why Choose Us</button>
-                  </div>
-              </div>
-              <Approach />
-              <ChooseUs />
+              <div>
+      <div className="d-flex justify-content-around">
+        <div>
+          <button
+            type="button"
+            className={`px-5 py-3 bg-white ${activeComponent === 'approach' ? 'active' : ''}`}
+            onClick={() => handleButtonClick('approach')}
+          >
+            Our Approach
+          </button>
+        </div>
+        <div>
+          <button
+            type="button"
+            className={`px-5 py-3 bg-white ${activeComponent === 'chooseUs' ? 'active' : ''}`}
+            onClick={() => handleButtonClick('chooseUs')}
+          >
+            Question / Answers
+          </button>
+        </div>
+        <div>
+          <button
+            type="button"
+            className={`px-5 py-3 bg-white ${activeComponent === 'chooseUs' ? 'active' : ''}`}
+            onClick={() => handleButtonClick('chooseUs')}
+          >
+            Why Choose Us
+          </button>
+        </div>
+      </div>
+      {activeComponent === 'approach' && <Approach />}
+      {activeComponent === 'chooseUs' && <ChooseUs />}
+      {activeComponent === 'chooseUs' && <ChooseUs />}
+    </div>
             </div>
           </div>
         </section>

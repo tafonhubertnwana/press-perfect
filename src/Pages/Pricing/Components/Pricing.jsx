@@ -24,7 +24,7 @@ const Pricing = () => {
 
       {/* price table */}
       <section>
-        <div className="home-body">
+        <div className="">
           <PriceTable />
         </div>
       </section>

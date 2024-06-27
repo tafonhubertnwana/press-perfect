@@ -5,15 +5,15 @@ import Modal from './Modal';
 const PricingHeader = () => {
   return (
     <div className=" text-center">
-      <p className="pt-5 text-head">Our Pricing Table</p>
-      <h3 className="pb-4">AFFORDABLE PRICES</h3>
+      <p className="icon-title discount">[ Our Pricing Table ]</p>
+      <h3 className="title-head">AFFORDABLE PRICES</h3>
     </div>
   );
 };
 
 const PricingCard = ({ title, price, features }) => {
   return (
-    <div className="col-md-3 col-sm-6 mb-4 table-hover ">
+    <div className=" ">
       <div className="border bg-white h-100">
         <div className="m-5 text-center">
           <h3>{title}</h3>
@@ -74,14 +74,17 @@ const PriceTable = () => {
       <div className="container">
         <PricingHeader />
         <div className="row">
-          {priceCards.map((card, index) => (
-            <PricingCard
-              key={index}
-              title={card.title}
-              price={card.price}
-              features={card.features}
-            />
-          ))}
+          <div className='col d-flex justify-content-between  '>
+
+            {priceCards.map((card, index) => (
+              <PricingCard
+                key={index}
+                title={card.title}
+                price={card.price}
+                features={card.features}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>

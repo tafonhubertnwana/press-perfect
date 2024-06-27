@@ -73,7 +73,7 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className='testimonial-bg'>
+        <div className=''>
 
           <div className='container'>
             <div className='row py-5 g-4'>

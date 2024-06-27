@@ -108,28 +108,33 @@ const Contact = () => {
                       onChange={(e) => setName(e.target.value)}
 
                     />
-                    <div className=' py-2 d-flex justify-content-between'> 
+                    <div className=' row'> 
+                      <div className="col-md-6">
 
-                      <input
-                        type="email"
-                        className="form-control pe-2"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter email"
-                        name="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)} 
+                        <input
+                          type="email"
+                          className="form-control pe-2"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter email"
+                          name="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)} 
 
-                      />
-                      <input
-                        type="text"
-                        className="form-control"
-                        
-                        
-                        placeholder='Phone'
-                        name="phone"
-                        
-                      />
+                        />
+                      </div>
+                      <div className="col-md-6">
+                        <input
+                          type="text"
+                          className="form-control"
+                          
+                          
+                          placeholder='Phone'
+                          name="phone"
+                          
+                        />
+
+                      </div>
                     </div>
                     
                       <textarea 

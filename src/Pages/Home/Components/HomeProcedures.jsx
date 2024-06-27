@@ -38,8 +38,8 @@ const HomeProcedures = () => {
     <div>
       <div className="container">
             <div className='my-5 text-center'>
-              <p className='text-head'>In 4 easy steps</p>
-              <h3>How PressPerfect works</h3>
+              <div className='icon-title discount'>[ In 4 easy steps ]</div>
+              <h3 className='title-head'>How PressPerfect works</h3>
             </div>
             <div className='row justify-content-center g-4'>
               {WorkSteps.map((step, index) => (
