@@ -5,6 +5,11 @@ import washAndFold from '../../../Assets/images/HomeImage/wash-and-fold-2.jpg';
 import homeDelivery from '../../../Assets/images/HomeImage/home-delivery.png';
 import { SlArrowRight } from "react-icons/sl";
 import NavBar from '../../../Components/Header/NavBar';
+import laundry from '../../../Assets/images/HomeImage/laundry.webp';
+import { TiTick } from "react-icons/ti";
+import OurFeatures from './OurFeatures';
+import OurServices from './OurServices';
+
 
 
 const Services = () => {
@@ -27,172 +32,83 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className=''>
-            <div className='container'>
-            <div className='my-5 text-center'>
-                <div className='discount icon-title'>[ Our Services ]</div>
-                <h4 className='title-head pt-2'>Dry Cleaning & Laundry,
-                Free Delivery</h4>
-              </div>
-            <HomeService />
-            </div>
+       <section>
+        <div className="container">
+          <div className='text-center'>
+
+            <div className='discount icon-title'>[ Our Services ]</div>
+            <h4 className="title-head">Dry Cleaning & Laundry, <br/>
+            Free Delivery</h4>
+          </div>
+          <div>
+            <OurServices />
           </div>
         </div>
-        <section>
-        <div className="container sticky">
-          <div className="row align-items-center ">
-            <div className="col-md-6">
-              <div className="w-75">
-                <div>
-                  <p className='text-head'>Services you will love</p>
-                  <h2>COIN LAUNDRY</h2>
-                  <p>
-                    PressedPerfect provides superd, eco-friendly dry cleaning and laundering for your garments.
-                  </p>
-                  <p>
-                    You simply toes your items in a locker and they come back clean. pressed and nicely packaged. hanging in the locker waiting for you.
-                  </p>
-
-                <div>
-                <div className="pt-2">
-                <ul className="">
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Laundered Shirts
-                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Specialty items
-                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Leather items
-                  </li><li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-Fur Trim                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-Pillowcases and Duvet Covers                  </li>
-
-                </ul>
-              </div>
-                </div>
-                </div>
-              </div>
+       </section>
+       <section>
+          <div>
+          <section className='section-history pt-5'>
+          <div className='d-flex'>
+            <div className='section-image'>
+              <img src={laundry} alt="" style={{height: '600px'}}/>
             </div>
-            <div className="col-md-6">
-              <div>
-                <img src={bannerContent} alt="" className="img-fluid" />
+            <div className='left-sect'>
+              <div className='bg-white p-5'>
+                <div className='icon-title discount'>
+                  [ laundry service for your business! ]
+                </div>
+                <h4 className='title-head pt-2'>
+                  Commercial Laundry Service
+                </h4>
+                <div>
+                  <p>
+                  Large corporations have determined that there is a financial benefit to outsourcing back office work because it saves money. Allowing us to do your laundry is cost effective and will allow you and your employees to focus on your core business. We offer smart solutions to meet your commercial laundry needs. Our Commercial Laundry Clients include:                  </p>
+
+                 <div className="d-flex justify-content-center">
+                  <div className=''>
+                    <ul>
+                      <li> <TiTick className='discount' /> Salons & Spas</li>
+                      <li> <TiTick className='discount'/> Restaurants and Gaterers</li>
+                      <li> <TiTick className='discount'/> Religious Organizations</li>
+                      <li> <TiTick className='discount'/> Daycare centers</li>
+                    </ul>
+                  </div>
+                  <div className=''>
+                    <ul>
+                      <li> <TiTick className='discount' /> Assisted Living / Nursing Homes</li>
+                      <li> <TiTick className='discount'/> Hotels & Motels</li>
+                      <li> <TiTick className='discount'/>Nail Salons</li>
+                      <li> <TiTick className='discount'/> Althletic Facilities / Gyms</li>
+                    </ul>
+                  </div>
+                 </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </section>
+          </div>
+       </section>
+       <div className="container">
+          <div className='text-center'>
+
+            <div className='discount icon-title'>[ Why you'll love us ]</div>
+            <h4 className="title-head">Our Features</h4>
+          </div>
+          <div >
+            <OurFeatures/>
+          </div>
+        </div>
+
+       <section>
+
+       </section>
+          
+        </div>
         
-        <section>
-        <div className="container sticky">
-          <div className="row align-items-center ">
-            <div className="col-md-6">
-              <div>
-                <img src={washAndFold} alt="" className="img-fluid" />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="w-75">
-                <div>
-                  <p className='text-head'>Services you will love</p>
-                  <h2>WASH & FOLD</h2>
-                  <p>
-                    Wash & Fold is just like going to the laundromat, except we do all the work for you.
-                  </p>
-                  <p>
-                    First your cothes are sorted and colors are separated. Then we wash and dry your cothes in separate machines. Next, your clothes are folded and delivered.
-                  </p>
-
-                <div>
-                <div className="pt-2">
-                <ul className="">
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Wash & Fold
-                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Detergent
-                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Bleach
-                  </li><li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>Fabric Softener                 </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span> Dryer Sheets                </li>
-
-                </ul>
-              </div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-
-        <section>
-        <div className="container sticky">
-          <div className="row align-items-center ">
-            
-            <div className="col-md-6">
-              <div className="w-75">
-                <div>
-                  <p className='text-head'>Services you will love</p>
-                  <h2>HOME DELIVERY</h2>
-                  <p>
-                   Dont't trust your delicates to just anyone! We created the most detailed order tracking for your garments in the industry.
-                  </p>
-                  <p>
-                    This isn't our first day, we have been at this a long time and perfected every aspect of the process along the journey!
-                  </p>
-
-                <div>
-                <div className="pt-2">
-                <ul className="">
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    7 Days a Week
-                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Scheduled Time
-                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-                    Safe Delivery
-                  </li><li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-Personal Attention                  </li>
-                  <li className="">
-                    <span className="fa pe-3"><SlArrowRight /></span>
-Quick Performance                 </li>
-
-                </ul>
-              </div>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div>
-                <img src={homeDelivery} alt="" className="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
 
         
-    </div>
+   
   )
 }
 
